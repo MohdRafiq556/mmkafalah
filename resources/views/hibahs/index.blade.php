@@ -8,7 +8,7 @@
                 <div class="card-header">
                     <h3>Index</h3>
                         <div class="float-right">
-                            <a href="{{ route ('receiver:create') }}">Add new hibah</a><!-- url('/hibah/'.$customer_id.'/create') -->
+                            <a href="{{ url('/hibah/'.$customer_id.'/create') }}">Add new hibah</a><!-- url('/hibah/'.$customer_id.'/create') -->
                         </div>
 
                 </div>
