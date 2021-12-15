@@ -38,7 +38,10 @@
                             <td>{{ $hibah->id }}</td>
                             <td>{{ $hibah->customer->nama_penuh }}</td>
                             <td>{{ $hibah->customer->nombor_ic }}</td>
-                            <td><a href="{{route ('receiver:create')}}">Tambah Nama Penerima</a></td>
+                            <td>
+                                <button><a href="{{route ('receiver:index', ['id' => $hibah->id])}}">Senarai Nama</a></button>
+                                <button><a href="{{route ('receiver:create', ['id' => $hibah->id])}}">Tambah Nama Penerima</a></button>
+                            </td>
                         </tr>
                         @endforeach
                     </tbody>

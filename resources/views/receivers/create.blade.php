@@ -10,10 +10,10 @@
                 </div>
 
                 <div class="card-body">
-                    
+
                     <!-- form start -->
 
-                    <form action="{{ route('receiver:store')}}" method="POST">
+                    <form action="{{ route('receiver:store', ['id'=>$hibah_id])}}" method="POST">
                         @csrf
                         <h3 class=" text-center h3 mb-1 text-gray-800">Maklumat Penerima Hibah</h3>
 
@@ -23,7 +23,7 @@
                             <label for="" class="text-gray-800">Nama Penuh:</label>
                             <input name="nama_penerima" type="text" placeholder="Nama Penuh Penerima Hibah" class="form-control form-control-user bg-gray-200" required>
                         </div>
-                        
+
                         <div class="form-group">
                             <label for="" class="text-gray-800">Nombor Kad Pengenalan:</label>
                             <input name="ic_penerima" type="number" placeholder="Nombor I/C Penerima" class="form-control form-control-user bg-gray-200" required>
@@ -43,7 +43,7 @@
 
                         <div class="form-group">
                             <label for="" class="text-gray-800">Bahagian:</label>
-                            <input name="bahagian" type="text" placeholder="Bahagian %" class="form-control form-control-user bg-gray-200" required> 
+                            <input name="bahagian" type="text" placeholder="Bahagian %" class="form-control form-control-user bg-gray-200" required>
                         </div>
 
                         <hr>

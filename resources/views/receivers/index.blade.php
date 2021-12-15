@@ -8,7 +8,7 @@
                 <div class="card-header">
                     <h3>Index</h3>
                         <!-- <div class="float-right">
-                            <a href="{{ url('/hibah/'.$customer_id.'/create') }}">Add new hibah</a>
+                            <a href="{{ url('/hibah/'.$data->customer_id.'/create') }}">Add new hibah</a>
                         </div> -->
 
                 </div>
@@ -25,25 +25,22 @@
                     <thead>
                     <tr>
                         <th>id</th>
-                        <th>Nama Pelanggan</th>
+                        <th>Nama Penerima</th>
                         <th>Nombor I/C</th>
-                        <th>Task</th>
-                
                     </tr>
                     </thead>
 
                     <tbody>
-                        @foreach($receivers as $receiver)
+                        @foreach($data->receivers as $receiver)
                         <tr>
                             <td>{{ $receiver->id }}</td>
-                            <td>{{ $receiver->customer->nama_penuh }}</td>
-                            <td>{{ $receiver->customer->nombor_ic }}</td>
-                            <td><a href="{{url ('receivers/create')}}">Tambah Nama Penerima</a></td>
+                            <td>{{ $receiver->nama_penerima }}</td>
+                            <td>{{ $receiver->ic_penerima }}</td>
                         </tr>
                         @endforeach
                     </tbody>
                 </table>
-                {{ $receivers->links() }}   
+                {{ $data->receivers->links() }}
                 </div>
             </div>
         </div>

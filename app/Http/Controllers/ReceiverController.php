@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Customer;
+use App\Models\Hibah;
 use Illuminate\Http\Request;
 
 use App\Models\Receiver;
@@ -18,10 +20,16 @@ class ReceiverController extends Controller
      */
     public function index(Request $request)
     {
+        $data = new \stdClass();
         //
          $receivers = Receiver::where('hibah_id', $request->id)->paginate(10);
         $hibah_id = $request->id;
-        return view('receivers.index')->with('receivers', $receivers)->with('hibah_id', $hibah_id);
+        $hibah = Hibah::find($hibah_id);
+        $customer_id = $hibah->customer_id;
+        $data->receivers = $receivers;
+        $data->hibah_id = $hibah_id;
+        $data->customer_id = $customer_id;
+        return view('receivers.index')->with('receivers', $receivers)->with('data', $data);
     }
 
     /**
@@ -29,10 +37,10 @@ class ReceiverController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-
-        return view('receivers.create');//create.blade.php
+        $hibah_id = $request->id;
+        return view('receivers.create')->with('hibah_id', $hibah_id);//create.blade.php
     }
 
     /**
@@ -43,6 +51,7 @@ class ReceiverController extends Controller
      */
     public function store(Request $request)
     {
+
         //
         $receiver = new Receiver();
             $receiver->nama_penerima = $request->get('nama_penerima');
@@ -50,11 +59,11 @@ class ReceiverController extends Controller
             $receiver->no_tel_penerima = $request->get('no_tel_penerima');
             $receiver->hubungan = $request->get('hubungan');
             $receiver->bahagian = $request->get('bahagian');
-            $receiver->hibah_id = hibah()->id;
+            $receiver->hibah_id = $request->id;
             $receiver->save();
 
         //redirect to index
-        return redirect('/receivers');
+        return redirect('/receivers/' . $request->id);
     }
 
     /**

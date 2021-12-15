@@ -74,9 +74,9 @@ Route::group([
     'prefix'=>'receivers',
     'as'=>'receiver:',
 ],function(){
-    Route::get('/', [App\Http\Controllers\ReceiverController::class, 'index'])->name('index');
-    Route::get('/create', [App\Http\Controllers\ReceiverController::class, 'create'])->name('create');
-    Route::post('/create', [App\Http\Controllers\ReceiverController::class, 'store'])->name('store');
+    Route::get('/{id}', [App\Http\Controllers\ReceiverController::class, 'index'])->name('index');
+    Route::get('/create/{id}', [App\Http\Controllers\ReceiverController::class, 'create'])->name('create');
+    Route::post('/create/{id}', [App\Http\Controllers\ReceiverController::class, 'store'])->name('store');
     Route::get('/{receiver}', [App\Http\Controllers\ReceiverController::class, 'show'])->name('show');
     Route::get('/{receiver}/edit', [App\Http\Controllers\ReceiverController::class, 'edit'])->name('edit');
     Route::post('/{receiver}', [App\Http\Controllers\ReceiverController::class, 'update'])->name('update');
