@@ -1,0 +1,117 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+use App\Models\Receiver;
+
+class ReceiverController extends Controller
+{
+    /*public function __construct(){
+        $this->middleware('auth');
+    }//end construct*/
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function index()
+    {
+        //
+         $receivers = Receiver::where('hibah_id', $request->id)->paginate(10);
+        $hibah_id = $request->id;
+        return view('receivers.index')->with('receivers', $receivers)->with('hibah_id', $hibah_id);
+    }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        //
+        return view('receivers.create');//create.blade.php
+    }
+
+    /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store(Request $request)
+    {
+        //
+        $receiver = new Receiver();
+            $receiver->nama_penerima = $request->get('nama_penerima');
+            $receiver->ic_penerima = $request->get('ic_penerima');
+            $receiver->no_tel_penerima = $request->get('no_tel_penerima');
+            $receiver->hubungan = $request->get('hubungan');
+            $receiver->bahagian = $request->get('bahagian');
+            $receiver->hibah_id = hibah()->id;
+            $receiver->save();
+
+        //redirect to index
+        return redirect('/receivers');
+    }
+
+    /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function show($id)
+    {
+        //
+        //$reciver = Receiver::find($id);
+        //return view ('receivers.show')->with(compact('receiver'));
+    }
+
+    /**
+     * Show the form for editing the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function edit($id)
+    {
+        $receiver=Receiver::find($id);
+        return view('receivers.edit')->with(compact('receiver'));//call form edit   
+    }
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        //save edited record
+        $receiver = Receiver::find($id);
+        $receiver->update($request->only('nama_penerima', 'ic_penerima', 'no_tel_penerima', 'hubungan', 'bahagian'));
+
+        //redirect to index
+        return redirect('/receivers')->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function destroy($id)
+    {
+        //
+        //delete record based on IC number
+        $receiver = Receiver::find($id);
+        $receiver->delete();
+
+        return redirect ('/receiver')->with('success', "Rekod Berjaya Dipadam!");
+    }
+}
