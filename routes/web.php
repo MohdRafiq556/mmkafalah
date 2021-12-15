@@ -19,9 +19,9 @@ use App\Http\Controllers\HibahController;
 
 Route::get('/', function () {
     return view('landingpage');
-}); 
+});
 
-Route::get('/', [App\Http\Controllers\CustomerController::class, 'index'])->name('index'); 
+Route::get('/', [App\Http\Controllers\CustomerController::class, 'index'])->name('index');
 //Route::get('/{customer}', [App\Http\Controllers\CustomerController::class, 'show'])->name('show');
 
 
@@ -38,7 +38,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 // user information
 Route::get('page/user/profile', [App\Http\Controllers\HomeController::class, 'userProfile'])->name('page/user/profile');
-Route::post('page/user/profile', [App\Http\Controllers\HomeController::class, 'updateAvatar'])->name('updateAvatar');
+Route::put('page/user/profile', [App\Http\Controllers\HomeController::class, 'updateAvatar'])->name('updateAvatar');
 
 //routes/web.php
 //route for customer module
@@ -59,7 +59,7 @@ Route::group([
     Route::get('/{customer}', [App\Http\Controllers\CustomerController::class, 'show'])->name('show');
     Route::get('/{customer}/edit', [App\Http\Controllers\CustomerController::class, 'edit'])->name('edit');
     Route::post('/{customer}', [App\Http\Controllers\CustomerController::class, 'update'])->name('update');
-    Route::post('/{customer}/delete', [App\Http\Controllers\CustomerController::class, 'delete'])->name('delete');   
+    Route::post('/{customer}/delete', [App\Http\Controllers\CustomerController::class, 'delete'])->name('delete');
 });
 
 //-----------------------------hibah-------------------------------------------//
@@ -81,5 +81,5 @@ Route::group([
     Route::get('/{receiver}/edit', [App\Http\Controllers\ReceiverController::class, 'edit'])->name('edit');
     Route::post('/{receiver}', [App\Http\Controllers\ReceiverController::class, 'update'])->name('update');
     Route::post('/{receiver}/delete', [App\Http\Controllers\ReceiverController::class, 'delete'])->name('delete');
-    
+
 });

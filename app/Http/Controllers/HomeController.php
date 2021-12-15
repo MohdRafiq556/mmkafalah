@@ -44,6 +44,8 @@ class HomeController extends Controller
             $user->save();
         }
 
+        // save kan data lain pulak. ko hanya letak untuk gambar je
+
         return view('usermanagement.user_profile', array('user' => Auth::user() ));
     }
 }

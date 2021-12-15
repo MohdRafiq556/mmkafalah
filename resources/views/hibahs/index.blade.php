@@ -28,7 +28,7 @@
                         <th>Nama Pelanggan</th>
                         <th>Nombor I/C</th>
                         <th>Task</th>
-                
+
                     </tr>
                     </thead>
 
@@ -43,7 +43,7 @@
                         @endforeach
                     </tbody>
                 </table>
-                {{ $hibahs->links() }}   
+                {{ $hibahs->links() }}
                 </div>
             </div>
         </div>

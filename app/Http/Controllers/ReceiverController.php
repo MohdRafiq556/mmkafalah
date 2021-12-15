@@ -16,7 +16,7 @@ class ReceiverController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
         //
          $receivers = Receiver::where('hibah_id', $request->id)->paginate(10);
@@ -31,7 +31,7 @@ class ReceiverController extends Controller
      */
     public function create()
     {
-        //
+
         return view('receivers.create');//create.blade.php
     }
 
@@ -79,7 +79,7 @@ class ReceiverController extends Controller
     public function edit($id)
     {
         $receiver=Receiver::find($id);
-        return view('receivers.edit')->with(compact('receiver'));//call form edit   
+        return view('receivers.edit')->with(compact('receiver'));//call form edit
     }
 
     /**

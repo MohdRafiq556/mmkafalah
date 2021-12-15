@@ -7,15 +7,17 @@
             <img src="/uploads/avatars/{{ $user->avatar }}"  style="width:150px; height:150px; float:left; border-radius:50%; margin-right:25px;">
             <h2>{{ $user->name }}'s Profile</h2>
 
-            <form enctype="multipart/form-data" action="/profile" method="POST">
+{{--            Tgk route tu betul2. Salah letak tu, ni dah okay. tgk untuk data lain pulak. aku buat gambar je ni--}}
+            <form enctype="multipart/form-data" action="{{ route('updateAvatar') }}" method="POST">
+                @method('PUT')
+                @csrf
 
                 <div >
                     <label for="">Update Profile Image</label>
                     <input type="file" name="avatar">
-                    <input type="hidden" name="_token" value="{{ csrf_token() }}">
                 </div>
 
-                
+
                 <div class="form-group row">
                     <label for="">Email Address</label>
                     <input type="text" name="email" value="{{ $user->email}}" class="form-control form-control-user bg-gray-200" readonly>
@@ -25,7 +27,7 @@
                     <label for="">Nama Penuh</label>
                     <input type="text" name="name" value="{{ $user->name}}" class="form-control form-control-user bg-gray-200">
                 </div>
-                
+
                 <div class="form-group">
                     <label for="">Alamat Rumah</label>
                     <input type="text" name="address" value="{{ $user->address}}" class="form-control form-control-user bg-gray-200">
