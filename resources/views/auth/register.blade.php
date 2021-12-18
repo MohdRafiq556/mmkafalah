@@ -92,9 +92,9 @@
                         <div class="form-group"><!-- class="row" -->
                             <label for="role_id" class="col-md-4 col-form-label text-md-left">{{ __('Staf/wakil') }}</label><!-- class="text-md-right" -->
 
-                            <select name="user_roles" id="role_id" value="{{ old('role_id') }}" placeholder="" required autocomplete="role_id">
-                                <option value="Staff">Staff</option>
-                                <option value="Wakil">Wakil Syarikat</option>
+                            <select name="user_roles" id="role_id" value="{{ old('user_roles') }}" placeholder="" required>
+                                <option value="2">Staff</option>
+                                <option value="3">Wakil Syarikat</option>
                             </select>
                         </div>
 
@@ -106,7 +106,7 @@
                             </div>
                         </div>
 
-                        
+
 
                         <div><!-- class="form-group row mb-0" -->
                             <div class="text-center"><!-- class="col-md-6 offset-md-4" plus class="text-center" -->
@@ -118,7 +118,7 @@
 
                         <div ><!-- class="form-group row mb-0" -->
                             <div class="text-center"><!-- class="col-md-8 offset-md-4" and plus text-center-->
-                                
+
                                     <a class="small" href="{{ url('/') }}"><!-- class="btn btn-link" -->
                                         {{ __('Batal') }}
                                 </a>
