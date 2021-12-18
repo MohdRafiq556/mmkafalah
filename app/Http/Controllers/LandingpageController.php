@@ -2,19 +2,23 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Customer;
 use Illuminate\Http\Request;
 
 class LandingpageController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function index()
+
+    public function index(Request $request)
     {
-        //
-        
+        $customers = [];
+
+        if ($request->queries){
+            $customers = Customer::where('nombor_ic', $request->queries)->get();
+        }
+
+
+        return view('landingpage')->with('customers', $customers);
+
     }
 
     /**

@@ -39,7 +39,7 @@
                         <!-- To make this form functional, sign up at-->
                         <!-- https://startbootstrap.com/solution/contact-forms-->
                         <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactFormFooter" method="GET" data-sb-form-api-token="API_TOKEN" action="{{url ('/')}}"> 
+                        <form class="form-subscribe" id="contactFormFooter" method="GET" data-sb-form-api-token="API_TOKEN" action="{{url ('/')}}">
                             <!-- Email address input-->
                             <div class="row">
                                 <div class="col">
@@ -50,7 +50,7 @@
                                 <div class="col-auto">
                                     <button class="btn btn-primary btn-lg" id="submitButton" type="submit">Carian</button>
                                 </div>
-                                
+
                             </div>
                             <!-- Submit success message-->
                             <!---->
@@ -68,16 +68,17 @@
                             <!-- This is what your users will see when there is-->
                             <!-- an error submitting the form-->
                             <!--<div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>-->
-                            <!-- @yield('content') -->
-                            
+                            <!--  -->
+                            @yield('content')
+
                         </form>
-                        
+
                     </div>
                 </div>
             </div>
         </section>
 
-        
+
 
         <!-- Footer-->
         <footer class="footer bg-light">

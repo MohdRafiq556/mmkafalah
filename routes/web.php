@@ -17,19 +17,16 @@ use App\Http\Controllers\HibahController;
 |
 */
 
-Route::get('/', function () {
-    return view('landingpage');
-});
+//Route::get('/', function () {
+//    return view('landingpage');
+//});
 
 Route::get('/', [App\Http\Controllers\CustomerController::class, 'index'])->name('index');
 //Route::get('/{customer}', [App\Http\Controllers\CustomerController::class, 'show'])->name('show');
 
 
 //routes/web.php
-Route::get('/', function () {
-    $customers=Customer::all();
-    return view('landingpage')->with(compact('customers'));
-});
+Route::get('/', [\App\Http\Controllers\LandingpageController::class, 'index']);
 
 
 Auth::routes();
@@ -48,10 +45,13 @@ Route::put('page/user/profile', [App\Http\Controllers\HomeController::class, 'up
 
 //group routing
 //--------------------------------customers-----------------------------------------//
+Route::get('customers/share_view/{customer}', [App\Http\Controllers\CustomerController::class, 'customer_view'])->name('customer-view');
+
 Route::group([
     'middleware'=>'auth', //lock this route group to only authenticated users
     'prefix'=>'customers',
     'as'=>'customer:',
+    'except' => 'customer_view'
 ],function(){
     Route::get('/', [App\Http\Controllers\CustomerController::class, 'index'])->name('index');
     Route::get('/create', [App\Http\Controllers\CustomerController::class, 'create'])->name('create');
@@ -60,6 +60,7 @@ Route::group([
     Route::get('/{customer}/edit', [App\Http\Controllers\CustomerController::class, 'edit'])->name('edit');
     Route::post('/{customer}', [App\Http\Controllers\CustomerController::class, 'update'])->name('update');
     Route::post('/{customer}/delete', [App\Http\Controllers\CustomerController::class, 'delete'])->name('delete');
+
 });
 
 //-----------------------------hibah-------------------------------------------//

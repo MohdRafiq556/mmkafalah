@@ -9,7 +9,7 @@ use App\Models\Customer;
 class CustomerController extends Controller
 {
     public function __construct(){
-        $this->middleware('auth');
+        $this->middleware('auth')->except('customer_view');
     }//end construct
     /**
      * Display a listing of the resource.
@@ -58,7 +58,7 @@ class CustomerController extends Controller
      */
     public function store(Request $request)
     {
-        
+
 
         $customer = new Customer();
             //$customer->user_id = get('user_id');
@@ -155,6 +155,11 @@ class CustomerController extends Controller
         $customer->delete();
 
         return redirect ('/customers')->with('success', "Rekod Berjaya Dipadam!");
+    }
+
+    public function customer_view(Request $request){
+//        buat code untuk cari hibah by Customer ID
+        return view('customer_view');
     }
 
 }

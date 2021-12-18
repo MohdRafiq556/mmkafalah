@@ -1,9 +1,6 @@
 @extends('layouts.landpage')
 
 @section('content')
-<div>
-    &nbsp;
-</div>
 
 <div class="container">
     <div class="row justify-content-center">
@@ -11,12 +8,11 @@
             <div class="card">
                 <div class="card-header">
                     <h3>Senarai Pelanggan</h3>
-
                 </div>
 
                 <div class="card-body">
 
-                @if (session('success')) 
+                @if (session('success'))
                     <div class="alert alert-success">
                         {{ session('success') }}
                     </div>
@@ -33,19 +29,26 @@
                     </thead>
 
                     <tbody>
-                    @foreach($customers as $customer)
+                    @if(count($customers) > 0)
+                        @foreach($customers as $customer)
+                            <tr>
+                                <td>{{ $customer->id }}</td>
+                                <td>{{ $customer->nama_penuh }}</td>
+                                <td>{{ $customer->nombor_ic }}</td>
+                                <td>
+                                    <a href="{{ route('customer:customer-view',$customer->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list">show</i></a>
+                                </td>
+                            </tr>
+                        @endforeach
+                    @endif
+                    @if(count($customers) == 0)
                     <tr>
-                        <td>{{ $customer->id }}</td>
-                        <td>{{ $customer->nama_penuh }}</td>
-                        <td>{{ $customer->nombor_ic }}</td>
-                        <td>
-                            <a href="{{ route('customer:show',$customer->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list">show</i></a>
-                        </td>     
+                        <td colspan="4">None</td>
                     </tr>
-                    @endforeach
+                    @endif
                     </tbody>
                 </table>
- 
+
                 </div>
             </div>
         </div>
