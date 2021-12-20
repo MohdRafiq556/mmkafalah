@@ -38,7 +38,7 @@
                     <input type="text" name="phone_number" value="{{ $user->phone_number}}" class="form-control form-control-user bg-gray-200">
                 </div>
 
-                <div class="form-group"><!-- class="row" -->
+                        <div class="form-group"><!-- class="row" -->
                             <label for="password" class="col-md-4 col-form-label text-md-left">{{ __('Password') }}</label><!-- class="text-md-right" -->
 
                             <div> <!-- class="col-md-6" -->

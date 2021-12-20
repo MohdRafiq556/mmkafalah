@@ -121,6 +121,6 @@ class ReceiverController extends Controller
         $receiver = Receiver::find($id);
         $receiver->delete();
 
-        return redirect ('/receiver')->with('success', "Rekod Berjaya Dipadam!");
+        return redirect ('/receivers')->with('success', "Rekod Berjaya Dipadam!");
     }
 }

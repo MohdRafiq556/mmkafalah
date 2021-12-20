@@ -36,6 +36,16 @@
                             <td>{{ $receiver->id }}</td>
                             <td>{{ $receiver->nama_penerima }}</td>
                             <td>{{ $receiver->ic_penerima }}</td>
+                            <td>
+                                <a href="{{ route('receiver:show', $receiver->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list"> Lihat</i></a>
+                                <a href="{{ route('receiver:edit', $receiver->id) }}" class="btn btn-warning btn-sm"><i class="fa fa-edit"> Edit</i></a>
+                            </td>
+                            <td><!-- form delete button -->
+                                <form action="{{ route('receiver:delete',$receiver->id) }}" method="POST">
+                                    @csrf
+                                    <button class="btn btn-danger btn-sm" onclick="return confirm('Are You Sure to Delete IC number: {{$receiver->ic_penerima}} ?')"><i class="fa fa-trash"></i> Padam</button>
+                                </form>
+                            </td><!-- form delete button -->
                         </tr>
                         @endforeach
                     </tbody>

@@ -17,12 +17,10 @@ use App\Http\Controllers\HibahController;
 |
 */
 
-//Route::get('/', function () {
-//    return view('landingpage');
-//});
+
 
 Route::get('/', [App\Http\Controllers\CustomerController::class, 'index'])->name('index');
-//Route::get('/{customer}', [App\Http\Controllers\CustomerController::class, 'show'])->name('show');
+
 
 
 //routes/web.php
@@ -33,15 +31,19 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-// user information
+//------------------------------user information-------------------------------------//
 Route::get('page/user/profile', [App\Http\Controllers\HomeController::class, 'userProfile'])->name('page/user/profile');
 Route::put('page/user/profile', [App\Http\Controllers\HomeController::class, 'updateAvatar'])->name('updateAvatar');
+
 
 //routes/web.php
 //route for customer module
 //Route::get('/customers', [App\Http\Controllers\CustomerController::class, 'index'])->name('customer:index');
 //Route::get('/customers/create', [App\Http\Controllers\CustomerController::class, 'create'])->name('customer:create');
 //Route::post('/customers/create', [App\Http\Controllers\CustomerController::class, 'store'])->name('customer:store');
+
+//-----------------------------Search-----------------------------------------------//
+
 
 //group routing
 //--------------------------------customers-----------------------------------------//
