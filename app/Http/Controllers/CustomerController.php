@@ -159,6 +159,7 @@ class CustomerController extends Controller
 
     public function customer_view(Request $request){
 //        buat code untuk cari hibah by Customer ID
+            
         return view('customer_view');
     }
 

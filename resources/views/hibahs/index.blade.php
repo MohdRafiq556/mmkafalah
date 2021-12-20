@@ -8,7 +8,7 @@
                 <div class="card-header">
                     <h3>Index</h3>
                         <div class="float-right">
-                            <a href="{{ url('/hibah/'.$customer_id.'/create') }}">Add new hibah</a><!-- url('/hibah/'.$customer_id.'/create') -->
+                            <a href="{{ url('/hibah/'.$customer_id.'/create') }}" class="btn btn-primary btn-sm"><i class="fas fa-plus"> Add new hibah</i></a><!-- url('/hibah/'.$customer_id.'/create') -->
                         </div>
 
                 </div>
@@ -39,8 +39,8 @@
                             <td>{{ $hibah->customer->nama_penuh }}</td>
                             <td>{{ $hibah->customer->nombor_ic }}</td>
                             <td>
-                                <button><a href="{{route ('receiver:index', ['id' => $hibah->id])}}">Senarai Nama</a></button>
-                                <button><a href="{{route ('receiver:create', ['id' => $hibah->id])}}">Tambah Nama Penerima</a></button>
+                                <a href="{{route ('receiver:index', ['id' => $hibah->id])}}" class="btn btn-warning btn-sm" ><i class="fas fa-list-ul"> Senarai Nama</i></a>
+                                <a href="{{route ('receiver:create', ['id' => $hibah->id])}}" class="btn btn-success btn-sm"><i class="fas fa-user-plus"> Tambah Nama Penerima</i></a>
                             </td>
                         </tr>
                         @endforeach
