@@ -47,7 +47,8 @@ Route::put('page/user/profile', [App\Http\Controllers\HomeController::class, 'up
 
 //group routing
 //--------------------------------customers-----------------------------------------//
-Route::get('customers/share_view/{customer}', [App\Http\Controllers\CustomerController::class, 'customer_view'])->name('customer-view');
+Route::get('customers/share_view/{customer}', [App\Http\Controllers\CustomerController::class, 'customer_view'])->name('customer-view');//kalau guna ni je, ade error bila search, error"Route [customer:customer-view] not defined. "
+
 
 Route::group([
     'middleware'=>'auth', //lock this route group to only authenticated users
@@ -62,7 +63,7 @@ Route::group([
     Route::get('/{customer}/edit', [App\Http\Controllers\CustomerController::class, 'edit'])->name('edit');
     Route::post('/{customer}', [App\Http\Controllers\CustomerController::class, 'update'])->name('update');
     Route::post('/{customer}/delete', [App\Http\Controllers\CustomerController::class, 'delete'])->name('delete');
-
+    Route::get('customers/share_view/{customer}', [App\Http\Controllers\CustomerController::class, 'customer_view'])->name('customer-view'); //aku tambah ni
 });
 
 //-----------------------------hibah-------------------------------------------//
