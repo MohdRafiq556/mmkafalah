@@ -36,7 +36,7 @@
                                 <td>{{ $customer->nama_penuh }}</td>
                                 <td>{{ $customer->nombor_ic }}</td>
                                 <td>
-                                    <a href="{{ route('customer:customer-view',$customer->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list">show</i></a>
+                                    <a href="{{ route('customer-view',$customer->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list">show</i></a>
                                 </td>
                             </tr>
                         @endforeach
