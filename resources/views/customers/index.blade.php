@@ -31,6 +31,7 @@
                         <th>Nama</th>
                         <th>No I/C</th>
                         <th>Pakej Pilihan</th>
+                        <th>Nama Pegawai</th>
                         <th>Pilihan</th>
                         <th>Padam</th>
                     </tr>
@@ -43,6 +44,7 @@
                         <td>{{ $customer->nama_penuh }}</td>
                         <td>{{ $customer->nombor_ic }}</td>
                         <td>{{ $customer->pakej_pilihan }}</td>
+                        <td>{{ $customer->pegawai_perunding}}</td>
                         <td>
                             <a href="{{ route('hibah-index', [$customer->id]) }}" class="btn btn-primary btn-sm"><i class="fas fa-plus-circle"> Hibah</i></a>
                             <a href="{{ route('customer:show', $customer->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list"> Lihat</i></a>

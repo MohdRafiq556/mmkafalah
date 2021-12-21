@@ -7,9 +7,9 @@
             <div class="card">
                 <div class="card-header">
                     <h3>Index</h3>
-                        <!-- <div class="float-right">
-                            <a href="{{ url('/hibah/'.$data->customer_id.'/create') }}">Add new hibah</a>
-                        </div> -->
+                        <div class="float-right">
+                            <a href="{{ url(' hibah/{id}') }}">Kembali</a> <!-- aku tak dpt nak buat dia back ke hibah index -->
+                        </div> 
 
                 </div>
 
