@@ -91,8 +91,11 @@ class CustomerController extends Controller
             $customer->email_pelanggan = $request->get('email_pelanggan');
             $customer->tarikh = $request->get('tarikh');
             $customer->pegawai_perunding = $request->get('pegawai_perunding');
+            $customer->gambar_ic = $request->file('gambar_ic')->store('public/files');
             $customer->user_id = auth()->user()->id;
             $customer->save();
+
+            
 
         //redirect to index
         return redirect('/customers');
@@ -136,7 +139,7 @@ class CustomerController extends Controller
     {
         //save edited record
         $customer = Customer::find($id);
-        $customer->update($request->only('tempat_lahir','keturunan','warganegara','jantina','agama','nombor_telefon','nombor_hp','alamat_rumah','poskod','bandar','negeri','pekerjaan','pendapatan','nama_majikan','sektor','jumlah_tanggungan','tinggi','berat','nombor_akaun','bank','pakej_pilihan','jumlah_simpanan','jum_simpanan','email_pelanggan','tarikh','pegawai_perunding'));
+        $customer->update($request->only('tempat_lahir','keturunan','warganegara','jantina','agama','nombor_telefon','nombor_hp','alamat_rumah','poskod','bandar','negeri','pekerjaan','pendapatan','nama_majikan','sektor','jumlah_tanggungan','tinggi','berat','nombor_akaun','bank','pakej_pilihan','jumlah_simpanan','jum_simpanan','email_pelanggan','tarikh','pegawai_perunding','gambar_ic'));
 
         //redirect to index
         return redirect('/customers')->with('success', 'Maklumat Pelanggan Berjaya diKemasikini!!');
@@ -165,5 +168,6 @@ class CustomerController extends Controller
             $customer_id = $request->id;
         return view('customer_view');
     }
+
 
 }

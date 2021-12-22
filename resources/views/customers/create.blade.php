@@ -13,7 +13,7 @@
                     
                     <!-- form start -->
 
-                    <form action="{{ route('customer:store')}}" method="POST">
+                    <form action="{{ route('customer:store')}}" enctype="multipart/form-data" method="POST">
                         @csrf
                         <h3 class=" text-center h3 mb-1 text-gray-800">Maklumat Pelanggan</h3>
 
@@ -203,6 +203,11 @@
                                 <label for="" class="text-gray-800" >Tarikh Permohonan</label>
                                 <input name="tarikh" type="date" class="form-control form-control-user bg-gray-200" required>
                             </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="file" class="text-gray-800">Muat Naik Salinan I/C Pelanggan</label>
+                            <input name="gambar_ic" type="file" class="form-control form-control-user bg-gray-200" required>
                         </div>
 
                         <hr>

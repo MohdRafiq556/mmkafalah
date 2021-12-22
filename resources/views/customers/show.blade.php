@@ -186,22 +186,24 @@
                             </div>
                         </div>
 
+                        
+
                         <hr>
 
-                        <!-- <div class="form-group row">
+                         <div class="form-group row">
                             <div class="col-sm-12 text-right">
                                 <a class="btn btn-primary" href="{{url ('customers')}}">Back</a>
                             </div>
-                        </div> -->
+                        </div> 
                     </form>
 
                     <!----------------------------  part receiver ----------------------------------------- -->
 
-                    <form action="{{ route('receiver:store')}}" method="POST">
+                    <form action="{{ route('receiver:store')}}" method="POST"> 
                         @csrf
                         <h3 class=" text-center h3 mb-1 text-gray-800">Maklumat Penerima Hibah</h3>
 
-                        <!-- <hr> -->
+                         <hr> 
 
                         <div class="form-group">
                             <label for="" class="text-gray-800">Nama Penuh:</label>
@@ -237,7 +239,7 @@
                                 <a class="btn btn-primary" href="{{url ('receivers/{id}')}}">Back</a>
                             </div>
                         </div>
-                    </form>
+                    </form> 
 
                     <!-- form end -->
                 </div>

@@ -46,6 +46,7 @@ class CreateCustomersTable extends Migration
             $table->timestamp('tarikh');
             $table->string('pegawai_perunding');
             $table->integer('user_id');
+            $table->string('gambar_ic');
             $table->timestamps();
         });
     }

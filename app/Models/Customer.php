@@ -41,7 +41,8 @@ class Customer extends Model
         'email_pelanggan',
         'tarikh',
         'pegawai_perunding',
-        'user_id'
+        'user_id',
+        'gambar_ic'
     ];
 
     protected $table='customers';
