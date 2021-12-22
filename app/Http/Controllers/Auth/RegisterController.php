@@ -56,9 +56,10 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'address' => ['required', 'string', 'max:255'],
-            'phone_number' => ['required', 'string', 'max:255'],
+            'phone_number' => ['required', 'string', 'max:255', 'digits:11'],
             'user_roles' => ['required']
         ]);
+        return back()->with('Success', 'Selamat Datang Ke MM Kafalah Agency.');
     }
 
     /**

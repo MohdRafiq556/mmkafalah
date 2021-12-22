@@ -75,8 +75,9 @@ class ReceiverController extends Controller
     public function show($id)
     {
         //
-        //$reciver = Receiver::find($id);
-        //return view ('receivers.show')->with(compact('receiver'));
+        $receiver = Receiver::find($id);
+        
+        return view ('receivers.show')->with(compact('receiver'));
     }
 
     /**
@@ -114,13 +115,13 @@ class ReceiverController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function delete($id)
     {
         //
         //delete record based on IC number
         $receiver = Receiver::find($id);
         $receiver->delete();
 
-        return redirect ('/receivers/{id}')->with('success', "Rekod Berjaya Dipadam!");
+        return redirect ('/receivers')->with('success', "Rekod Berjaya Dipadam!");
     }
 }

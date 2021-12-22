@@ -8,7 +8,7 @@
                 <div class="card-header">
                     <h3>Index</h3>
                         <div class="float-right">
-                            <a href="{{ url(' hibah/{id}') }}">Kembali</a> <!-- aku tak dpt nak buat dia back ke hibah index -->
+                            <a href="{{ url('/hibah/{id}') }}">Kembali</a> <!-- aku tak dpt nak buat dia back ke hibah index -->
                         </div> 
 
                 </div>

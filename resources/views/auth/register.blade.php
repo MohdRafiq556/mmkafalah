@@ -57,7 +57,7 @@
                             <label for="phone_number" class="col-md-4 col-form-label text-md-left">{{ __('Nombor Telefon') }}</label><!-- class="text-md-right" -->
 
                             <div ><!-- class="col-md-6" -->
-                                <input id="phone_number" type="number" class="form-control @error('name') is-invalid @enderror form-control-user" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number" placeholder="Enter Your Number Phone" autofocus> <!-- plus class="form-control-user" -->
+                                <input id="phone_number" type="number" class="form-control @error('name') is-invalid @enderror form-control-user" min="1" max="10000000000" name="phone_number" value="{{ old('phone_number') }}" required autocomplete="phone_number" placeholder="Enter Your Number Phone" autofocus> <!-- plus class="form-control-user" -->
 
                                 @error('phone_number')
                                     <span class="invalid-feedback" role="alert">

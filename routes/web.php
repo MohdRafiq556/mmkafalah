@@ -47,7 +47,7 @@ Route::put('page/user/profile', [App\Http\Controllers\HomeController::class, 'up
 
 //group routing
 //--------------------------------customers-----------------------------------------//
-Route::get('customers/share_view/{customer}', [App\Http\Controllers\CustomerController::class, 'customer_view'])->name('customer-view');//kalau guna ni je, ade error bila search, error"Route [customer:customer-view] not defined. "
+Route::get('customers/share_view/{customer}', [App\Http\Controllers\CustomerController::class, 'customer_view'])->name('customer-view');
 
 
 Route::group([
@@ -82,7 +82,9 @@ Route::group([
     Route::post('/create/{id}', [App\Http\Controllers\ReceiverController::class, 'store'])->name('store');
     Route::get('/{receiver}', [App\Http\Controllers\ReceiverController::class, 'show'])->name('show');
     Route::get('/{receiver}/edit', [App\Http\Controllers\ReceiverController::class, 'edit'])->name('edit');
-    Route::post('/{receiver}', [App\Http\Controllers\ReceiverController::class, 'update'])->name('update');
-    Route::post('/{receiver}/delete', [App\Http\Controllers\ReceiverController::class, 'delete'])->name('delete');
+    //Route::post('/{receiver}', [App\Http\Controllers\ReceiverController::class, 'update'])->name('update');
+    Route::put('/{receiver}', [App\Http\Controllers\ReceiverController::class, 'update'])->name('update');
+    Route::post('/receiver/{delete}', [App\Http\Controllers\ReceiverController::class, 'delete'])->name('delete');
+    
 
 });
