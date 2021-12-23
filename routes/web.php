@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Models\Customer;
 use App\Models\Hibah;
 use App\Models\Receiver;
+use App\Models\User;
 
 use App\Http\Controllers\HibahController;
 /*
@@ -34,7 +35,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 //------------------------------user information-------------------------------------//
 Route::get('page/user/profile', [App\Http\Controllers\HomeController::class, 'userProfile'])->name('page/user/profile');
 Route::put('page/user/profile', [App\Http\Controllers\HomeController::class, 'updateAvatar'])->name('updateAvatar');
-
+//Route::get('/', [App\Http\Controllers\UserController::class, 'index'])->name('index');
 
 //routes/web.php
 //route for customer module
