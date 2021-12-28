@@ -13,7 +13,7 @@
                     
                     <!-- form start -->
 
-                    <form action="{{ route('customer:store')}}" method="POST">
+                    <form action="{{ route('customer-view')}}" method="POST">
                         @csrf
                         <h3 class=" text-center h3 mb-1 text-gray-800">Maklumat Pelanggan</h3>
 

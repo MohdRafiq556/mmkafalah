@@ -162,11 +162,9 @@ class CustomerController extends Controller
 
     public function customer_view(Request $request){
 //        buat code untuk cari hibah by Customer ID
-            $customer = Customer::find($id);
-            
-            $hibahs = Hibah::where('customer_id', $request->id);
-            $customer_id = $request->id;
-        return view('customer_view');
+        $hibah = Hibah::find($hibahs->customer_id);
+        $customer_id = $request->id;
+        return view('customer_view')->with('hibahs', $hibahs)->with('customer_id', $customer_id);
     }
 
 
