@@ -45,7 +45,7 @@
                     @endif
                     @if(count($customers) == 0)
                     <tr>
-                        <td colspan="4">None</td>
+                        <td colspan="5">None</td>
                     </tr>
                     @endif
                     </tbody>

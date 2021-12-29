@@ -106,7 +106,7 @@ class ReceiverController extends Controller
         $receiver->update($request->only('nama_penerima', 'ic_penerima', 'no_tel_penerima', 'hubungan', 'bahagian'));
 
         //redirect to index
-        return redirect('/receivers')->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
+        return redirect('/receivers/{id}')->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
     }
 
     /**

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Auth;
 use Image;
+use DB;
 
 class HomeController extends Controller
 {
@@ -25,7 +26,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $total = DB::table('hibahs')->count();
+        $count = DB::table('customers')->count();
+        $calc = DB::table('receivers')->count();
+        $RM = DB::table('customers')->count("jum_simpanan");
+        return view('home',compact('total', 'count', 'calc', 'RM'));
     }
     public function userProfile()
     {

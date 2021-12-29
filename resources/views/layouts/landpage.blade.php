@@ -43,7 +43,7 @@
                             <!-- Email address input-->
                             <div class="row">
                                 <div class="col">
-                                    <input class="form-control form-control-lg" name="queries" id="nombor_ic" type="number" placeholder=" Nombor I/C..." data-sb-validations="required,nombor_ic" />
+                                    <input class="form-control form-control-lg" name="queries" id="nombor_ic" type="number" placeholder=" Nombor I/C..." min="1" data-sb-validations="required,nombor_ic" />
                                     <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Your I/C Number is required.</div>
                                     <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Your I/C Number is invalid.</div>
                                 </div>
