@@ -49,6 +49,8 @@ Route::put('page/user/profile', [App\Http\Controllers\HomeController::class, 'up
 //group routing
 //--------------------------------customers-----------------------------------------//
 Route::get('customers/share_view/{customer}', [App\Http\Controllers\CustomerController::class, 'customer_view'])->name('customer-view');
+Route::get('receivers/share_view/{hibah}', [App\Http\Controllers\CustomerController::class, 'customer_view_receivers'])->name('customer-view-receivers');
+Route::get('receivers/share_view/details/{receiver}', [App\Http\Controllers\CustomerController::class, 'customer_view_receiver_detail'])->name('customer-view-receiver_details');
 
 
 Route::group([
@@ -78,6 +80,7 @@ Route::group([
     'middleware'=>'auth', //lock this route group to only authenticated users
     'prefix'=>'receivers',
     'as'=>'receiver:',
+    'except' => '[customer-view-receivers , customer-view-receiver_details]'
 ],function(){
     Route::get('/{id}', [App\Http\Controllers\ReceiverController::class, 'index'])->name('index');
     Route::get('/create/{id}', [App\Http\Controllers\ReceiverController::class, 'create'])->name('create');
@@ -87,6 +90,6 @@ Route::group([
     //Route::post('/{receiver}', [App\Http\Controllers\ReceiverController::class, 'update'])->name('update');
     Route::put('/{receiver}', [App\Http\Controllers\ReceiverController::class, 'update'])->name('update');
     Route::post('/receiver/{delete}', [App\Http\Controllers\ReceiverController::class, 'delete'])->name('delete');
-    
+
 
 });

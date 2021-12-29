@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Hibah;
+use App\Models\Receiver;
 use Illuminate\Http\Request;
 
 use App\Models\Customer;
@@ -9,7 +11,7 @@ use App\Models\Customer;
 class CustomerController extends Controller
 {
     public function __construct(){
-        $this->middleware('auth')->except('customer_view');
+        $this->middleware('auth')->except(['customer_view_receivers', 'customer_view', 'customer_view_receiver_detail']);
     }//end construct
     /**
      * Display a listing of the resource.
@@ -95,7 +97,7 @@ class CustomerController extends Controller
             $customer->user_id = auth()->user()->id;
             $customer->save();
 
-            
+
 
         //redirect to index
         return redirect('/customers');
@@ -161,10 +163,30 @@ class CustomerController extends Controller
     }
 
     public function customer_view(Request $request){
-//        buat code untuk cari hibah by Customer ID
-        $hibah = Hibah::find($hibahs->customer_id);
-        $customer_id = $request->id;
-        return view('customer_view')->with('hibahs', $hibahs)->with('customer_id', $customer_id);
+        $hibahs = Hibah::where('customer_id', $request->customer)->paginate(10);
+
+        return view('share_hibah_view')->with('hibahs', $hibahs);
+    }
+
+    public function customer_view_receivers(Request $request){
+        $data = new \stdClass();
+        //
+        $receivers = Receiver::where('hibah_id', $request->hibah)->paginate(10);
+        $hibah_id = $request->hibah;
+        $hibah = Hibah::find($hibah_id);
+        $customer_id = $hibah->customer_id;
+        $data->receivers = $receivers;
+        $data->hibah_id = $hibah_id;
+        $data->customer_id = $customer_id;
+
+
+        return view('share_receivers')->with('receivers', $receivers)->with('data', $data);
+    }
+
+    public function customer_view_receiver_detail(Request $request){
+        $receiver = Receiver::find($request->receiver);
+
+        return view('share_detail_receiver')->with('receiver', $receiver);
     }
 
 
