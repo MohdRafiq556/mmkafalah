@@ -1,4 +1,4 @@
-@extends('layouts.sbadmin2')
+@extends('layouts.landpage')
 
 @section('content')
     <div class="container">

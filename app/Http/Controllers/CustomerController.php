@@ -11,7 +11,7 @@ use App\Models\Customer;
 class CustomerController extends Controller
 {
     public function __construct(){
-        $this->middleware('auth')->except(['customer_view_receivers', 'customer_view', 'customer_view_receiver_detail']);
+        $this->middleware('auth')->except(['customer_view_receivers', 'customer_view', 'customer_view_receiver_detail', 'customer_view_hibah_detail']);
     }//end construct
     /**
      * Display a listing of the resource.
@@ -187,6 +187,12 @@ class CustomerController extends Controller
         $receiver = Receiver::find($request->receiver);
 
         return view('share_detail_receiver')->with('receiver', $receiver);
+    }
+
+    public function customer_view_hibah_detail(Request $request){
+        $customer = Customer::find($request->customer);
+
+        return view('share_detail_hibah_view')->with('customer', $customer);
     }
 
 

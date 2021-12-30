@@ -1,4 +1,4 @@
-@extends('layouts.sbadmin2')
+@extends('layouts.landpage')
 
 @section('content')
     <div class="container">
@@ -32,7 +32,7 @@
                             <div class="form-group row">
                                 <div class="col-sm-6 mb-3 mb-sm-0">
                                     <label for="" class="text-gray-800">Nombor Telefon:</label>
-                                    <input name="no_tel_penerima" type="number" value="{{ $receiver->to_tel_penerima}}" placeholder="Nombor Telefon Penerima"  class="form-control form-control-user bg-gray-200" readonly>
+                                    <input name="no_tel_penerima" type="number" value="{{ $receiver->no_tel_penerima}}" placeholder="Nombor Telefon Penerima"  class="form-control form-control-user bg-gray-200" readonly>
                                 </div>
 
                                 <div class="col-sm-6">

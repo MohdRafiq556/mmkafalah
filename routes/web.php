@@ -51,13 +51,13 @@ Route::put('page/user/profile', [App\Http\Controllers\HomeController::class, 'up
 Route::get('customers/share_view/{customer}', [App\Http\Controllers\CustomerController::class, 'customer_view'])->name('customer-view');
 Route::get('receivers/share_view/{hibah}', [App\Http\Controllers\CustomerController::class, 'customer_view_receivers'])->name('customer-view-receivers');
 Route::get('receivers/share_view/details/{receiver}', [App\Http\Controllers\CustomerController::class, 'customer_view_receiver_detail'])->name('customer-view-receiver_details');
-
+Route::get('customers/share_view/details/{customer}', [App\Http\Controllers\CustomerController::class, 'customer_view_hibah_detail'])->name('customer-view-hibah_details');
 
 Route::group([
     'middleware'=>'auth', //lock this route group to only authenticated users
     'prefix'=>'customers',
     'as'=>'customer:',
-    'except' => 'customer_view'
+    'except' => '[customer_view , customer-view-hibah_details]'
 ],function(){
     Route::get('/', [App\Http\Controllers\CustomerController::class, 'index'])->name('index');
     Route::get('/create', [App\Http\Controllers\CustomerController::class, 'create'])->name('create');

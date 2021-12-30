@@ -38,6 +38,9 @@
                                 <td>{{ $customer->nombor_ic }}</td>
                                 <td>{{ $customer->pakej_pilihan }}</td>
                                 <td>
+                                    <a href="{{ route('customer-view-hibah_details',$customer->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list">Maklumat Pelanggan</i></a>
+                                </td>
+                                <td>
                                     <a href="{{ route('customer-view',$customer->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list">show</i></a>
                                 </td>
                             </tr>
