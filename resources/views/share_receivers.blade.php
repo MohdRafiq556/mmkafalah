@@ -1,4 +1,4 @@
-@extends('layouts.landpage')
+@extends('layouts.landpage2')
 
 @section('content')
     <div class="container">
@@ -6,11 +6,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Penerima Hibah</h3>
-                        <div class="float-right">
-                            <a href="{{route ('hibah-index', '$receiver->id')}}">Kembali</a> <!-- aku tak dpt nak buat dia back ke hibah index -->
-                        </div>
-
+                        <h3 class="" style="color:Navy;">Penerima Hibah</h3>
                     </div>
 
                     <div class="card-body">
@@ -24,7 +20,7 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th>id</th>
+                                <th>ID Penerima</th>
                                 <th>Nama Penerima</th>
                                 <th>Nombor I/C</th>
                                 <th>Tindakan</th>
@@ -38,7 +34,7 @@
                                     <td>{{ $receiver->nama_penerima }}</td>
                                     <td>{{ $receiver->ic_penerima }}</td>
                                     <td>
-                                        <a href="{{ route('customer-view-receiver_details', $receiver->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list"> Lihat</i></a>
+                                        <a href="{{ route('customer-view-receiver_details', $receiver->id) }}" class="btn btn-success btn-sm"> Maklumat Penerima</a>
                                     </td>
 
                                 </tr>
@@ -46,6 +42,9 @@
                             </tbody>
                         </table>
                         {{ $data->receivers->links() }}
+                        <div style="float-right">
+                            <a class="btn btn-warning btn-sm" href="{{url ('customers/share_view/details/{customer}','$customer->id')}}">Kembali ke Senarai Hibah</a>
+                        </div>
                     </div>
                 </div>
             </div>

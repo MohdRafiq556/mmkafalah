@@ -1,4 +1,4 @@
-@extends('layouts.landpage')
+@extends('layouts.landpage2')
 
 @section('content')
 <div class="container">
@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h2 class="h2 mb-1 text-gray-900">Borang Permohonan</h2>
+                    <h2 class="h2 mb-1 text-gray-900" style="color:Navy;">Borang Permohonan</h2>
                 </div>
 
                 <div class="card-body">
@@ -15,7 +15,7 @@
 
                     <form  method="POST">
                         @csrf
-                        <h3 class=" text-center h3 mb-1 text-gray-800">Maklumat Pelanggan</h3>
+                        <h3 class=" text-center h3 mb-1 text-gray-800" style="color:Grey;">Maklumat Pelanggan</h3>
 
                         <hr>
 
@@ -190,7 +190,8 @@
 
                         <div class="form-group row">
                             <div class="col-sm-12 text-right">
-                                <a class="btn btn-primary" href="{{url ('customers')}}">Back</a>
+                                <a class="btn btn-primary" href="{{url ('/')}}">Kembali ke Halaman Utama</a>
+                                <a href="{{ route('customer-view',$customer->id) }}" class="btn btn-success">Senarai Hibah</a>
                             </div>
                         </div>
                     </form>

@@ -1,4 +1,4 @@
-@extends('layouts.landpage')
+@extends('layouts.landpage2')
 
 @section('content')
     <div class="container">
@@ -6,7 +6,7 @@
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header">
-                        <h3>Senarai Hibah</h3>
+                        <h3 style="color:Navy;">Senarai Hibah</h3>
                     </div>
 
                     <div class="card-body">
@@ -34,7 +34,7 @@
                                     <td>{{ $hibah->customer->nama_penuh }}</td>
                                     <td>{{ $hibah->customer->nombor_ic }}</td>
                                     <td>
-                                        <a href="{{route ('customer-view-receivers', ['hibah' => $hibah->id])}}" class="btn btn-warning btn-sm" ><i class="fas fa-list-ul"> Senarai Nama</i></a>
+                                        <a href="{{route ('customer-view-receivers', ['hibah' => $hibah->id])}}" class="btn btn-success btn-sm" > Senarai Nama Penerima</a>
                                     </td>
                                 </tr>
                             @endforeach

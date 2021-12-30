@@ -7,7 +7,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h3>Senarai Pelanggan</h3>
+                    <h3 style="color:Navy;">Senarai Pelanggan</h3>
                 </div>
 
                 <div class="card-body">
@@ -25,7 +25,7 @@
                         <th>Nama</th>
                         <th>No I/C</th>
                         <th>Pakej Pilihan</th>
-                        <th>Show</th>
+                        <th>Tindakan</th>
                     </tr>
                     </thead>
 
@@ -38,10 +38,7 @@
                                 <td>{{ $customer->nombor_ic }}</td>
                                 <td>{{ $customer->pakej_pilihan }}</td>
                                 <td>
-                                    <a href="{{ route('customer-view-hibah_details',$customer->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list">Maklumat Pelanggan</i></a>
-                                </td>
-                                <td>
-                                    <a href="{{ route('customer-view',$customer->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list">show</i></a>
+                                    <a href="{{ route('customer-view-hibah_details',$customer->id) }}" class="btn btn-success btn-sm">Maklumat Pelanggan</a>
                                 </td>
                             </tr>
                         @endforeach
