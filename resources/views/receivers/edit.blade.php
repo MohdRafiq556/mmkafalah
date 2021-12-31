@@ -51,7 +51,7 @@
 
                         <div class="form-group row">
                             <div class="col-sm-12 text-right">
-                                <a class="btn btn-danger btn-user" href="{{route ('receiver:index', ['$data->id'])}}">Cancel</a> <!-- tak boleh nak balik ke receiver index -->
+                                <a class="btn btn-danger btn-user" href="{{url ('/receivers/{id}', ['receiver' => $receiver->id] )}}">Cancel</a> <!-- tak boleh nak balik ke receiver index -->
 
                                 <button type="submit" class="btn btn-success btn-user ">Submit</button>
                             </div>

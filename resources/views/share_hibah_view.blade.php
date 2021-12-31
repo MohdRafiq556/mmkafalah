@@ -20,7 +20,7 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th>ID Hibah</th>
+                                <th>#</th>
                                 <th>Nama Pelanggan</th>
                                 <th>Nombor I/C</th>
                                 <th>Tindakan</th>

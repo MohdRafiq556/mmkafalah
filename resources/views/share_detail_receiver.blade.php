@@ -48,8 +48,8 @@
                             &nbsp;
 
                             <div class="form-group">
-                                <label for="bahagian" style="color:grey; float:left; font-weight:bold;">Bahagian:</label>
-                                <input name="bahagian" type="text" value="{{ $receiver->bahagian}}" placeholder="Bahagian %" class="form-control form-control-user bg-gray-200" readonly>
+                                <label for="bahagian" style="color:grey; float:left; font-weight:bold;">Bahagian (%):</label>
+                                <input name="bahagian" type="text" value="{{ $receiver->bahagian}} {{ __('%') }}" placeholder="Bahagian %" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <hr>

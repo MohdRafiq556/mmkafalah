@@ -37,8 +37,8 @@
                             <td>{{ $receiver->nama_penerima }}</td>
                             <td>{{ $receiver->ic_penerima }}</td>
                             <td>
-                                <a href="{{ route('receiver:show', $receiver->id) }}" class="btn btn-success btn-sm"><i class="fa fa-list"> Lihat</i></a>
-                                <a href="{{ route('receiver:edit', $receiver->id) }}" class="btn btn-warning btn-sm"><i class="fa fa-edit"> Edit</i></a>
+                                <a href="{{ route('receiver:show', $receiver->id )}}" class="btn btn-success btn-sm"><i class="fa fa-list"> Lihat</i></a>
+                                <a href="{{ route('receiver:edit', $receiver->id )}}" class="btn btn-warning btn-sm"><i class="fa fa-edit"> Edit</i></a>
                             </td>
                             <td><!-- form delete button -->
                                 <form action="{{ route('receiver:delete',$receiver->id) }}" method="POST">

@@ -20,7 +20,7 @@
                         <table class="table table-striped">
                             <thead>
                             <tr>
-                                <th>ID Penerima</th>
+                                <th>#</th>
                                 <th>Nama Penerima</th>
                                 <th>Nombor I/C</th>
                                 <th>Tindakan</th>

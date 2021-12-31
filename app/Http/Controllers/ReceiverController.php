@@ -29,6 +29,7 @@ class ReceiverController extends Controller
         $data->receivers = $receivers;
         $data->hibah_id = $hibah_id;
         $data->customer_id = $customer_id;
+
         return view('receivers.index')->with('receivers', $receivers)->with('data', $data);
     }
 
@@ -72,11 +73,12 @@ class ReceiverController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Request $request)
     {
         //
-        $receiver = Receiver::find($id);
-        
+        $receiver = Receiver::find($request->receiver);
+        $hibah_id = $request->hibah;
+        $customer_id = $request->customer;
         return view ('receivers.show')->with(compact('receiver'));
     }
 
@@ -88,7 +90,8 @@ class ReceiverController extends Controller
      */
     public function edit($id)
     {
-        $receiver=Receiver::find($id);
+        $receiver = Receiver::find($id);
+        
         return view('receivers.edit')->with(compact('receiver'));//call form edit
     }
 
@@ -106,7 +109,7 @@ class ReceiverController extends Controller
         $receiver->update($request->only('nama_penerima', 'ic_penerima', 'no_tel_penerima', 'hubungan', 'bahagian'));
 
         //redirect to index
-        return redirect('/receivers/{id}')->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
+        return redirect('receivers/{id}')->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
     }
 
     /**
@@ -122,6 +125,6 @@ class ReceiverController extends Controller
         $receiver = Receiver::find($id);
         $receiver->delete();
 
-        return redirect ('/receivers')->with('success', "Rekod Berjaya Dipadam!");
+        return redirect ('receivers/{id}')->with('success', "Rekod Berjaya Dipadam!");
     }
 }

@@ -13,7 +13,7 @@
 
                     <!-- form start -->
 
-                    <form action="{{ route('receiver:store', ['id' => $receiver->id])}}" method="POST">
+                    <form method="POST">
                         @csrf
                         <h3 class=" text-center h3 mb-1 text-gray-800">Maklumat Penerima Hibah</h3>
 

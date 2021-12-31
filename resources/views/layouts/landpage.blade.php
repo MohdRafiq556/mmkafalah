@@ -72,12 +72,14 @@
                             
 
                         </form>
-                        @yield('content')
+                        
                     </div>
                 </div>
             </div>
+            &nbsp;
+            @yield('content')
         </section>
-
+        
 
 
         <!-- Footer-->

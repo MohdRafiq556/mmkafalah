@@ -21,167 +21,189 @@
 
                         <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                                <label for="" class="text-gray-800">Nama Penuh</label>
+                                <label for="nama_penuh" style="color:grey; float:left; font-weight:bold;"> Nama Penuh:</label>
                                 <input name="nama_penuh" value="{{ $customer->nama_penuh}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-6">
-                                <label for="" class="text-gray-800">No Kad Pengenalan</label>
+                                <label for="nombor_ic" style="color:grey; float:left; font-weight:bold;"> No Kad Pengenalan:</label>
                                 <input name="nombor_ic" value="{{ $customer->nombor_ic}}" readonly class="form-control form-control-user bg-gray-200">
                             </div>
                         </div>
 
+                        &nbsp;
+
                         <div class="form-group row">
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Tarikh Lahir</label>
+                                <label for="tarikhlahir" style="color:grey; float:left; font-weight:bold;"> Tarikh Lahir:</label>
                                 <input name="tarikhlahir" value="{{ $customer->tarikhlahir}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class=" col-sm-4">
-                                <label for="" class="text-gray-800">Tempat Lahir</label>
+                                <label for="tempat_lahir" style="color:grey; float:left; font-weight:bold;"> Tempat Lahir:</label>
                                 <input name="tempat_lahir" value="{{ $customer->tempat_lahir}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Jantina</label>
+                                <label for="jantina" style="color:grey; float:left; font-weight:bold;"> Jantina:</label>
                                 <input name="jantina" value="{{ $customer->jantina}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
                         </div>
 
+                        &nbsp;
+
                         <div class="form-group row">
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Keturunan</label>
+                                <label for="keturunan" style="color:grey; float:left; font-weight:bold;"> Keturunan:</label>
                                 <input name="keturunan" value="{{ $customer->keturunan}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class=" col-sm-4">
-                                <label for="" class="text-gray-800">Agama</label>
+                                <label for="agama" style="color:grey; float:left; font-weight:bold;"> Agama:</label>
                                 <input name="agama" value="{{ $customer->agama}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Warganegara</label>
+                                <label for="warganegara" style="color:grey; float:left; font-weight:bold;"> Warganegara:</label>
                                 <input name="warganegara" value="{{ $customer->warganegara}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
                         </div>
+
+                        &nbsp;
                         
                         <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                                <label for="" class="text-gray-800">Nombor Telefon</label>
+                                <label for="nombor_telefon" style="color:grey; float:left; font-weight:bold;"> Nombor Telefon:</label>
                                 <input name="nombor_telefon" value="{{ $customer->nombor_telefon}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-6">
-                                <label for="" class="text-gray-800">Nombor HP</label>
+                                <label for="nombor_hp" style="color:grey; float:left; font-weight:bold;"> Nombor HP:</label>
                                 <input name="nombor_hp" value="{{ $customer->nombor_hp}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
                         </div>
 
+                        &nbsp;
+
                         <div class="form-group">
-                            <label for="" class="text-gray-800">Alamat</label>
+                            <label for="alamat_rumah" style="color:grey; float:left; font-weight:bold;"> Alamat:</label>
                             <input name="alamat_rumah" value="{{ $customer->alamat_rumah}}" class="form-control form-control-user bg-gray-200" readonly>
                         </div>
 
+                        &nbsp;
+
                         <div class="form-group row">
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Poskod</label>
+                                <label for="poskod" style="color:grey; float:left; font-weight:bold;"> Poskod:</label>
                                 <input name="poskod" value="{{ $customer->poskod}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class=" col-sm-4">
-                                <label for="" class="text-gray-800">Bandar</label>
+                                <label for="bandar" style="color:grey; float:left; font-weight:bold;"> Bandar:</label>
                                 <input name="bandar" value="{{ $customer->bandar}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Negeri</label>
+                                <label for="negeri" style="color:grey; float:left; font-weight:bold;"> Negeri:</label>
                                 <input name="negeri" value="{{ $customer->negeri}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
                         </div>
 
+                        &nbsp;
+
                         <div class="form-group row">
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Pekerjaan</label>
+                                <label for="pekerjaan" style="color:grey; float:left; font-weight:bold;"> Pekerjaan:</label>
                                 <input name="pekerjaan" value="{{ $customer->pekerjaan}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class=" col-sm-4">
-                                <label for="" class="text-gray-800">Pendapatan (RM)</label>
+                                <label for="pendapatan" style="color:grey; float:left; font-weight:bold;"> Pendapatan (RM):</label>
                                 <input name="pendapatan" value="{{ $customer->pendapatan}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Jumlah Tanggungan</label>
+                                <label for="jumlah_tanggungan" style="color:grey; float:left; font-weight:bold;"> Jumlah Tanggungan:</label>
                                 <input name="jumlah_tanggungan" value="{{ $customer->jumlah_tanggungan}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
                         </div>
 
+                        &nbsp;
+
                         <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                            <label for="" class="text-gray-800">Nama Majikan</label>
+                            <label for="nama_majikan" style="color:grey; float:left; font-weight:bold;"> Nama Majikan:</label>
                                 <input name="nama_majikan" value="{{ $customer->nama_majikan}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-6">
-                                <label for="" class="text-gray-800">sektor</label>
+                                <label for="sektor" style="color:grey; float:left; font-weight:bold;"> Sektor:</label>
                                 <input name="sektor" value="{{ $customer->sektor}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
                         </div>
 
+                        &nbsp;
+
                         <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                            <label for="" class="text-gray-800">Tinggi (CM)</label>
+                            <label for="tinggi" style="color:grey; float:left; font-weight:bold;"> Tinggi (CM):</label>
                                 <input name="tinggi" value="{{ $customer->tinggi}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-6">
-                                <label for="" class="text-gray-800">Berat (KG)</label>
+                                <label for="berat" style="color:grey; float:left; font-weight:bold;"> Berat (KG):</label>
                                 <input name="berat" value="{{ $customer->berat}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
                         </div>
 
+                        &nbsp;
+
                         <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
-                            <label for="" class="text-gray-800">Nombor Akaun</label>
+                            <label for="nombor_akaun" style="color:grey; float:left; font-weight:bold;"> Nombor Akaun:</label>
                                 <input name="nombor_akaun" value="{{ $customer->nombor_akaun}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-6">
-                                <label for="" class="text-gray-800">Bank</label>
+                                <label for="bank" style="color:grey; float:left; font-weight:bold;"> Bank:</label>
                                 <input name="bank" value="{{ $customer->bank}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
                         </div>
 
+                        &nbsp;
+
                         <div class="form-group row">
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Pakej Pilihan</label>
+                                <label for="pakej_pilihan" style="color:grey; float:left; font-weight:bold;"> Pakej Pilihan:</label>
                                 <input name="pakej_pilihan" value="{{ $customer->pakej_pilihan}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class=" col-sm-4">
-                                <label for="" class="text-gray-800">Jumlah Simpanan (RM)</label>
+                                <label for="jum_simpanan" style="color:grey; float:left; font-weight:bold;"> Jumlah Simpanan (RM):</label>
                                 <input name="jum_simpanan" value="{{ $customer->jum_simpanan}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Jumlah Simpanan</label>
+                                <label for="jumlah_simpanan" style="color:grey; float:left; font-weight:bold;"> Jumlah Simpanan:</label>
                                 <input name="jumlah_simpanan" value="{{ $customer->jumlah_simpanan}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
                         </div>
+
+                        &nbsp;
                         
                         <div class="form-group row">
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Email Pelanggan</label>
+                                <label for="email_pelanggan" style="color:grey; float:left; font-weight:bold;"> Email Pelanggan:</label>
                                 <input name="email_pelanggan" value="{{ $customer->email_pelanggan}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class=" col-sm-4">
-                                <label for="" class="text-gray-800">Pegawai Perunding</label>
+                                <label for="pegawai_perunding" style="color:grey; float:left; font-weight:bold;"> Pegawai Perunding:</label>
                                 <input name="pegawai_perunding" value="{{ $customer->pegawai_perunding}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-4">
-                                <label for="" class="text-gray-800">Tarikh Permohonan</label>
+                                <label for="tarikh" style="color:grey; float:left; font-weight:bold;"> Tarikh Permohonan:</label>
                                 <input name="tarikh" value="{{ $customer->tarikh}}" class="form-control form-control-user bg-gray-200" readonly>
                             </div>
                         </div>
