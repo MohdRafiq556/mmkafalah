@@ -13,7 +13,7 @@
 
                     <!-- form start -->
 
-                    <form method="POST">
+                    <form action="{{ route('receiver:store', ['$hibah_id->id'] )}}" method="POST">
                         @csrf
                         <h3 class=" text-center h3 mb-1 text-gray-800">Maklumat Penerima Hibah</h3>
 
@@ -32,7 +32,7 @@
                         <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
                                 <label for="" class="text-gray-800">Nombor Telefon:</label>
-                                <input name="no_tel_penerima" type="number" value="{{ $receiver->to_tel_penerima}}" placeholder="Nombor Telefon Penerima"  class="form-control form-control-user bg-gray-200" readonly>
+                                <input name="no_tel_penerima" type="number" value="{{ $receiver->no_tel_penerima}}" placeholder="Nombor Telefon Penerima"  class="form-control form-control-user bg-gray-200" readonly>
                             </div>
 
                             <div class="col-sm-6">
@@ -50,7 +50,7 @@
 
                         <div class="form-group row">
                             <div class="col-sm-12 text-right">
-                                <a class="btn btn-primary" href="{{url ('receivers/{id}')}}">Back</a>
+                                <a class="btn btn-primary" href="{{url ('receivers/')}}">Back</a>
                             </div>
                         </div>
                     </form>

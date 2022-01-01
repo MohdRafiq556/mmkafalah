@@ -73,13 +73,13 @@ class ReceiverController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show(Request $request)
+    public function show($id)
     {
+        
         //
-        $receiver = Receiver::find($request->receiver);
-        $hibah_id = $request->hibah;
-        $customer_id = $request->customer;
-        return view ('receivers.show')->with(compact('receiver'));
+        $receiver = Receiver::find($id);
+        
+        return view ('receivers.show')->with('receiver', $receiver);
     }
 
     /**
@@ -109,7 +109,7 @@ class ReceiverController extends Controller
         $receiver->update($request->only('nama_penerima', 'ic_penerima', 'no_tel_penerima', 'hubungan', 'bahagian'));
 
         //redirect to index
-        return redirect('receivers/{id}')->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
+        return redirect('/receivers/' . $request->id)->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
     }
 
     /**
