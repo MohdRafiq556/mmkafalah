@@ -48,8 +48,9 @@ class HomeController extends Controller
             $user->avatar = $filename;
             $user->save();
         }
+        //change user details
         $user = Auth::user();
-        $user->update($request->only('name', 'email', 'password', 'phone_number', 'address'));
+        $user->update($request->only('name', 'email', 'phone_number', 'address'));
 
         // save kan data lain pulak. ko hanya letak untuk gambar je
 

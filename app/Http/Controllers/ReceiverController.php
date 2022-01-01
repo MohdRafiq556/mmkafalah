@@ -107,7 +107,7 @@ class ReceiverController extends Controller
         //save edited record
         $receiver = Receiver::find($id);
         $receiver->update($request->only('nama_penerima', 'ic_penerima', 'no_tel_penerima', 'hubungan', 'bahagian'));
-
+        
         //redirect to index
         return redirect('/receivers/')->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
     }

@@ -55,10 +55,7 @@
                     <i class="fas fa-fw fa-search"></i>
                     {{ __('Senarai Pelanggan') }}
                 </a>
-                <a class="nav-link" href="{{url ('staffs')}}"> <!-- utk admin view sahaja, tapi tak dpt nak buat -->
-                    <i class="fas fa-fw fa-search"></i>
-                    {{ __('Senarai Staf') }}
-                </a>
+                
                 <a class="nav-link" href="{{ route('logout') }}"
                         onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">

@@ -7,16 +7,16 @@
             <img src="/uploads/avatars/{{ $user->avatar }}"  style="width:150px; height:150px; float:left; border-radius:50%; margin-right:25px;">
             <h2>{{ $user->name }}'s Profile</h2>
 
-{{--            Tgk route tu betul2. Salah letak tu, ni dah okay. tgk untuk data lain pulak. aku buat gambar je ni--}}
+
             <form enctype="multipart/form-data" action="{{ route('updateAvatar') }}" method="POST">
                 @method('PUT')
                 @csrf
 
                 <div >
-                    <label for="">Update Profile Image</label>
+                    <label for="">Update Profile Image</label> 
+                    &nbsp;
                     <input type="file" name="avatar">
                 </div>
-
 
                 <div class="form-group row">
                     <label for="">Email Address</label>
@@ -38,29 +38,36 @@
                     <input type="text" name="phone_number" value="{{ $user->phone_number}}" class="form-control form-control-user bg-gray-200">
                 </div>
 
-                        <div class="form-group"><!-- class="row" -->
-                            <label for="password" class="col-md-4 col-form-label text-md-left">{{ __('Password') }}</label><!-- class="text-md-right" -->
+<!--
+                <div class="form-group">
+                    <label for="new_password" class="col-md-4 col-form-label text-md-left">{{ __('New Password') }}</label>
 
-                            <div> <!-- class="col-md-6" -->
-                                <input id="password" type="password" class="form-control  form-control-user @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Enter Your Password"><!-- plus class="form-control-user" -->
+                    <div> 
+                        <input type="password" class="form-control  form-control-user @error('password') is-invalid @enderror" name="password" required placeholder="Enter Your New Password">
 
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
+                        @error('password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
 
-                        <div class="form-group"><!-- class="row" -->
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-left">{{ __('Confirm Password') }}</label><!-- class="text-md-right" -->
+                <div class="form-group">
+                    <label for="confirm_password" class="col-md-4 col-form-label text-md-left">{{ __('Confirm Password') }}</label>
 
-                            <div> <!-- class="col-md-6" -->
-                                <input id="password-confirm" type="password" class="form-control form-control-user bg-gray-200" name="password_confirmation" required autocomplete="new-password" placeholder="Enter Your Confirm Password"><!-- plus class="form-control-user" -->
-                            </div>
-                        </div>
-
-                <button type="submit" class="btn btn-success btn-user ">Submit</button>
+                    <div> 
+                        <input type="password" class="form-control form-control-user @error('confirm_password') is-invalid @enderror bg-gray-200" name="confirm_password" required placeholder="Enter Your Confirm Password">
+                            
+                        @error('confirm_password')
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $message }}</strong>
+                            </span>
+                        @enderror
+                    </div>
+                </div>
+-->
+                <button type="submit" class="btn btn-success btn-user float-right">Submit</button>
             </form>
         </div>
     </div>

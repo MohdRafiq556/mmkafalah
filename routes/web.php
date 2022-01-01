@@ -7,6 +7,9 @@ use App\Models\Receiver;
 use App\Models\User;
 
 use App\Http\Controllers\HibahController;
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\ReceiverController;
+use App\Http\Controllers\HomeController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
