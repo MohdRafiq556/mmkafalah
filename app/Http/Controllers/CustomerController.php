@@ -93,7 +93,7 @@ class CustomerController extends Controller
             $customer->email_pelanggan = $request->get('email_pelanggan');
             $customer->tarikh = $request->get('tarikh');
             $customer->pegawai_perunding = $request->get('pegawai_perunding');
-            $customer->gambar_ic = $request->file('gambar_ic')->store('public/files');
+            $customer->gambar_ic = $request->file('gambar_ic')->store('public/storage');
             $customer->user_id = auth()->user()->id;
             $customer->save();
 
@@ -193,6 +193,13 @@ class CustomerController extends Controller
         $customer = Customer::find($request->customer);
 
         return view('share_detail_hibah_view')->with('customer', $customer);
+    }
+
+    public function download(Request $request)
+    {
+        $dl = File::find($id);
+        $dl = $customer->gambar_ic;
+        return Storage::download($dl);
     }
 
 

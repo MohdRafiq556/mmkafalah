@@ -35,7 +35,7 @@
                 <div class="sidebar-brand-icon">
                     <img class="img-profile rounded-circle" href="{{url ('home')}}" > <!-- src="{{asset('sbadmin2/img/mm_kafalah.jpg')}}" -->
                 </div>
-                <div class="sidebar-brand-text mx-1">MM Kafalah<sup>Staf/Wakil</sup></div>
+                <div class="sidebar-brand-text mx-1">MM Kafalah Agency <sup>Website</sup></div>
             </a>
 
             <!-- Divider -->

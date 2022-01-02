@@ -69,7 +69,7 @@ Route::group([
     Route::get('/{customer}/edit', [App\Http\Controllers\CustomerController::class, 'edit'])->name('edit');
     Route::post('/{customer}', [App\Http\Controllers\CustomerController::class, 'update'])->name('update');
     Route::post('/{customer}/delete', [App\Http\Controllers\CustomerController::class, 'delete'])->name('delete');
-    //Route::post('/customerdownload/{id}', [App\Http\Controllers\CustomerController::class, 'download'])->name('customer.download');
+    Route::get('/file/download', [App\Http\Controllers\CustomerController::class, 'download'])->name('downloadfile');
 });
 
 //-----------------------------hibah-------------------------------------------//
