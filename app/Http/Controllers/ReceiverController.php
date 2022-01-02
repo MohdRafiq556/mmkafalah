@@ -75,10 +75,10 @@ class ReceiverController extends Controller
      */
     public function show($id)
     {
-        
+
         //
         $receiver = Receiver::find($id);
-        
+
         return view ('receivers.show')->with('receiver', $receiver);
     }
 
@@ -91,7 +91,7 @@ class ReceiverController extends Controller
     public function edit($id)
     {
         $receiver = Receiver::find($id);
-        
+
         return view('receivers.edit')->with(compact('receiver'));//call form edit
     }
 
@@ -106,10 +106,11 @@ class ReceiverController extends Controller
     {
         //save edited record
         $receiver = Receiver::find($id);
+
         $receiver->update($request->only('nama_penerima', 'ic_penerima', 'no_tel_penerima', 'hubungan', 'bahagian'));
-        
+
         //redirect to index
-        return redirect('/receivers/' . $request->id)->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
+        return redirect('/receivers/' . $id)->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
     }
 
     /**
