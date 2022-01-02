@@ -92,7 +92,7 @@ Route::group([
     Route::get('/{receiver}/edit', [App\Http\Controllers\ReceiverController::class, 'edit'])->name('edit');
     //Route::post('/{receiver}', [App\Http\Controllers\ReceiverController::class, 'update'])->name('update');
     Route::put('/{receiver}/update', [App\Http\Controllers\ReceiverController::class, 'update'])->name('update');
-    Route::post('/receiver/{delete}', [App\Http\Controllers\ReceiverController::class, 'delete'])->name('delete');
+    Route::post('/{receiver}/delete', [App\Http\Controllers\ReceiverController::class, 'delete'])->name('delete');
 
 
 });

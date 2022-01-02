@@ -13,7 +13,7 @@
 
                     <!-- form start -->
 
-                    <form action="{{ route('receiver:update' , $receiver->id)}}" method="POST"> <!-- bila update penerima, akan tambah jd penerima baru,, aku nak buat dia just update penerima tu je-->
+                    <form action="{{ route('receiver:update', $receiver->id ) }}" method="POST"> <!-- bila update penerima, akan tambah jd penerima baru,, aku nak buat dia just update penerima tu je-->
                         @method('PUT')
                         @csrf
                         <h3 class=" text-center h3 mb-1 text-gray-800">Maklumat Penerima Hibah</h3>
@@ -51,7 +51,7 @@
 
                         <div class="form-group row">
                             <div class="col-sm-12 text-right">
-                                <a class="btn btn-danger btn-user" href="{{url ('/receivers/{id}', ['receiver' => $receiver->id] )}}">Cancel</a> <!-- tak boleh nak balik ke receiver index -->
+                                <a class="btn btn-danger btn-user" href="{{url ('/receivers', ['id' => $receiver->hibah_id] )}}">Cancel</a> <!-- tak boleh nak balik ke receiver index -->
 
                                 <button type="submit" class="btn btn-success btn-user ">Submit</button>
                             </div>
