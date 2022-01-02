@@ -110,7 +110,7 @@ class ReceiverController extends Controller
         $receiver->update($request->only('nama_penerima', 'ic_penerima', 'no_tel_penerima', 'hubungan', 'bahagian'));
 
         //redirect to index
-        return redirect('/receivers/' . $id)->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
+        return redirect('/receivers/' . $receiver->hibah_id)->with('success', 'Maklumat Penerima Berjaya diKemasikini!!');
     }
 
     /**
@@ -126,6 +126,6 @@ class ReceiverController extends Controller
         $receiver = Receiver::find($id);
         $receiver->delete();
 
-        return redirect ('/receivers/')->with('success', "Rekod Berjaya Dipadam!");
+        return redirect ('/receivers/' . $receiver->hibah_id)->with('success', "Rekod Berjaya Dipadam!");
     }
 }

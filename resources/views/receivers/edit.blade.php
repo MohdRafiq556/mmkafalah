@@ -13,7 +13,7 @@
 
                     <!-- form start -->
 
-                    <form action="{{ route('receiver:update', $receiver->id ) }}" method="POST"> <!-- bila update penerima, akan tambah jd penerima baru,, aku nak buat dia just update penerima tu je-->
+                    <form action="{{ route('receiver:update', $receiver->id) }}" method="POST"> <!-- bila update penerima, akan tambah jd penerima baru,, aku nak buat dia just update penerima tu je-->
                         @method('PUT')
                         @csrf
                         <h3 class=" text-center h3 mb-1 text-gray-800">Maklumat Penerima Hibah</h3>
