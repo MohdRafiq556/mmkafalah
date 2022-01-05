@@ -80,7 +80,46 @@
             @yield('content')
         </section>
         
+                <!-- Icons Grid-->
+                <section class="features-icons bg-light text-center">
+                    <div class="container">
+                        <div class="row">
+                            <h4>Misi Syarikat</h4>
+                            <div class="col-lg-4">
+                                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                                    <div class="features-icons-icon d-flex"><i class="bi bi bi-wallet-fill m-auto text-primary"></i></div>
+                                    
+                                    <p class="lead mb-0">Menjadi syarikat yang dekat dengan masyarakat di mana dapat memberi khidmat masyarakat di dalam menyelesaikan masalah berkaitan harta pusaka</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                                    <div class="features-icons-icon d-flex"><i class="bi bi-briefcase-fill m-auto text-primary"></i></div>
+                                    
+                                    <p class="lead mb-0">Mewujudkan lebih banyak peluang pekerjaan masyarakat di luar sana</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
+                                    <div class="features-icons-icon d-flex"><i class="bi bi-people-fill m-auto text-primary"></i></div>
+                                    
+                                    <p class="lead mb-0">Membantu masyarakat menyempurnakan tuntutan fardhu kifayah sesama islam</p>
+                                </div>
+                            </div>
+                            &nbsp;<hr>&nbsp;
+                            <h4>Visi Syarikat</h4>
+                            <div class="col-lg-12">
+                                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+                                    <div class="features-icons-icon d-flex"><i class="bi bi-cash-coin m-auto text-primary"></i></div>
+                                    
+                                    <p class="lead mb-3">Dapat membantu kerajaan menurunkan kadar aset terbeku milik orang islam</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
+                <hr>
 
         <!-- Footer-->
         <footer class="footer bg-light">
@@ -88,9 +127,9 @@
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                         <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="#!">About</a></li>
+                            <li class="list-inline-item"><a href="{{url ('/aboutus ')}}">About</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Contact</a></li>
+                            <li class="list-inline-item"><a href="{{url ('/contact ')}}">Contact</a></li>
                             <li class="list-inline-item">⋅</li>
                             <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
                             <li class="list-inline-item">⋅</li>
@@ -101,13 +140,16 @@
                     <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
                         <ul class="list-inline mb-0">
                             <li class="list-inline-item me-4">
+                                <a href="https://www.youtube.com/channel/UCHoUVraMSrMk1U7GavYOHLg" target="_blank"><i class="bi bi-youtube fs-3"></i></a>
+                            </li>
+                            <li class="list-inline-item me-4">
                                 <a href="https://www.facebook.com/MMKafalahAgensi/" target="_blank"><i class="bi-facebook fs-3"></i></a>
                             </li>
                             <li class="list-inline-item me-4">
-                                <a href="#!"><i class="bi-twitter fs-3"></i></a>
+                                <a href="https://www.instagram.com/mmkafalah_agency/" target="_blank"><i class="bi-instagram fs-3"></i></a>
                             </li>
-                            <li class="list-inline-item">
-                                <a href="#!"><i class="bi-instagram fs-3"></i></a>
+                            <li class="list-inline-item ">
+                                <a href="https://t.me/mmkafalahagency" target="_blank"><i class="bi-telegram fs-3"></i></a>
                             </li>
                         </ul>
                     </div>

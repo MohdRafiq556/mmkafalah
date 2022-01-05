@@ -25,11 +25,10 @@ use App\Http\Controllers\HomeController;
 
 Route::get('/', [App\Http\Controllers\CustomerController::class, 'index'])->name('index');
 
-
-
 //routes/web.php
 Route::get('/', [\App\Http\Controllers\LandingpageController::class, 'index']);
-
+Route::get('/aboutus', [\App\Http\Controllers\LandingpageController::class, 'aboutus'])->name('about');
+Route::get('/contact', [\App\Http\Controllers\LandingpageController::class, 'contact'])->name('contact');
 
 Auth::routes();
 

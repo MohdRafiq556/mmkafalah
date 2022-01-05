@@ -5,17 +5,18 @@ namespace App\Http\Controllers;
 use App\Models\Customer;
 use Illuminate\Http\Request;
 
+use DB;
+
 class LandingpageController extends Controller
 {
 
     public function index(Request $request)
     {
-        $customers = [];
 
+        $customers = [];
         if ($request->queries){
             $customers = Customer::where('nombor_ic', $request->queries)->get();
         }
-
 
         return view('landingpage')->with('customers', $customers);
 
@@ -85,5 +86,15 @@ class LandingpageController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function aboutus()
+    {
+        return view('about');
+    }
+
+    public function contact()
+    {
+        return view('contact');
     }
 }
