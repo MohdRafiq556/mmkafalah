@@ -97,4 +97,9 @@ class LandingpageController extends Controller
     {
         return view('contact');
     }
+
+    public function privacy()
+    {
+        return view('privacy');
+    }
 }

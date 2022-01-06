@@ -29,6 +29,7 @@ Route::get('/', [App\Http\Controllers\CustomerController::class, 'index'])->name
 Route::get('/', [\App\Http\Controllers\LandingpageController::class, 'index']);
 Route::get('/aboutus', [\App\Http\Controllers\LandingpageController::class, 'aboutus'])->name('about');
 Route::get('/contact', [\App\Http\Controllers\LandingpageController::class, 'contact'])->name('contact');
+Route::get('/privacy-policy', [\App\Http\Controllers\LandingpageController::class, 'privacy'])->name('privacy');
 
 Auth::routes();
 

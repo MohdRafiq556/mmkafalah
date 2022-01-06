@@ -33,7 +33,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{url ('home')}}">
                 <div class="sidebar-brand-icon">
-                    <img class="img-profile rounded-circle" href="{{url ('home')}}" > <!-- src="{{asset('sbadmin2/img/mm_kafalah.jpg')}}" -->
+                    <img class="img-profile rounded-circle" style="width:38px;height:38px;" src="{{asset('sbadmin2/img/mm_kafalah.jpg')}}" alt="Logo MM Kafalah Agency" href="{{url ('home')}}" > <!-- src="{{asset('sbadmin2/img/mm_kafalah.jpg')}}" -->
                 </div>
                 <div class="sidebar-brand-text mx-1">MM Kafalah Agency <sup>Website</sup></div>
             </a>

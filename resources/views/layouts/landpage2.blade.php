@@ -20,8 +20,8 @@
         <!-- Navigation-->
         <nav class="navbar navbar-light bg-light static-top">
             <div class="container">
-                <a class="navbar-brand" href="{{url ('/ ')}}">MM Kafalah Agency</a>
-                <a class="btn btn-primary" href="{{url ('login')}}">Log Masuk</a>
+                <a class="navbar-brand" href="{{url ('/ ')}}"><img style="width:60px;height:50px;" src="{{asset('landingpage2/assets/img/mm-kafalah.jpg')}}" alt="Logo MM Kafalah Agency">MM Kafalah Agency</a>
+                <a class="btn btn-primary" href="{{url ('login')}}">Log Masuk <i class="bi bi-box-arrow-in-right"></i></a>
             </div>
         </nav>
         <!-- Call to Action-->
@@ -49,9 +49,7 @@
                             <li class="list-inline-item">⋅</li>
                             <li class="list-inline-item"><a href="{{url ('/contact ')}}">Contact</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Terms of Use</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="{{url ('/privacy-policy ')}}">Privacy Policy</a></li>
                         </ul>
                         <p class="text-muted small mb-4 mb-lg-0">&copy; MMKafalah Agency 2021. All Rights Reserved.</p>
                     </div>

@@ -3,12 +3,11 @@
 @section('content')
 
 <!-- Image Showcases-->
-
 <section class="showcase">
-
             <div class="container-fluid p-0">
             <h1>Tentang Kami!</h1>
-                &nbsp;
+            &nbsp;
+                <hr>
                 <div class="row g-0">
                     <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('{{asset('landingpage2/assets/img/img-1.jpg')}}')"></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text">

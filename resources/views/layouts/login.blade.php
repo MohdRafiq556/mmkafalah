@@ -35,7 +35,7 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block "></div><!-- class="bg-login-image"-->
+                            <div class="col-lg-6 d-none d-lg-block "><img style="padding:5px;width:500px;height:420px;" src="{{asset('loginpage/img/login-img.png')}}" alt=""></div><!-- class="bg-login-image"-->
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">

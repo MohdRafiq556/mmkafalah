@@ -35,7 +35,7 @@
                     <div class="card-body p-0">
                         <!-- Nested Row within Card Body -->
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-block "></div> <!-- class="bg-password-image"-->
+                            <div class="col-lg-6 d-none d-lg-block "><img style="padding:5px;width:470px;height:380px;" src="{{asset('loginpage/img/forgot-img.jpg')}}" alt=""></div> <!-- class="bg-password-image"-->
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
