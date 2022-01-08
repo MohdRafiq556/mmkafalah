@@ -18,11 +18,64 @@
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
-            <div class="container">               
+        <nav class="navbar navbar-expand-lg navbar-light bg-light static-top">
+            <div class="container container-fluid">               
                 <a class="navbar-brand" href="{{url ('/ ')}}"><img style="width:60px;height:50px;" src="{{asset('landingpage2/assets/img/mm-kafalah.jpg')}}" alt="Logo MM Kafalah Agency">MM Kafalah Agency</a>
-                <a class="btn btn-primary" href="{{url ('login')}}">Log Masuk <i class="bi bi-box-arrow-in-right"></i></a>
-                <!-- <a class="btn btn-primary" href="#signup">Login</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                    
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-secondary" href="#misi">
+                                KORPORAT
+                            </a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PERKHIDMATAN
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                GALERI
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                HUBUNGI
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class=" btn btn-secondary" href="{{url ('login')}}">Log Masuk <i class="bi bi-box-arrow-in-right"></i></a>
             </div>
         </nav>
         <!-- Call to Action-->
@@ -84,7 +137,7 @@
                 <section class="features-icons bg-light text-center">
                     <div class="container">
                         <div class="row">
-                            <h4>Misi Syarikat</h4>
+                            <h4 id="misi">Misi Syarikat</h4>
                             <div class="col-lg-4">
                                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                     <div class="features-icons-icon d-flex"><i class="bi bi bi-wallet-fill m-auto text-primary"></i></div>
