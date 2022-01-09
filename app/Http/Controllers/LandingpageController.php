@@ -102,4 +102,14 @@ class LandingpageController extends Controller
     {
         return view('privacy');
     }
+
+    public function hibah_aset()
+    {
+        return view('hibah_aset');
+    }
+
+    public function urus_pusaka()
+    {
+        return view('urus_pusaka');
+    }
 }

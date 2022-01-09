@@ -30,6 +30,8 @@ Route::get('/', [\App\Http\Controllers\LandingpageController::class, 'index']);
 Route::get('/aboutus', [\App\Http\Controllers\LandingpageController::class, 'aboutus'])->name('about');
 Route::get('/contact', [\App\Http\Controllers\LandingpageController::class, 'contact'])->name('contact');
 Route::get('/privacy-policy', [\App\Http\Controllers\LandingpageController::class, 'privacy'])->name('privacy');
+Route::get('/hibah-aset', [\App\Http\Controllers\LandingpageController::class, 'hibah_aset'])->name('hibah_aset');
+Route::get('/urus-pusaka', [\App\Http\Controllers\LandingpageController::class, 'urus_pusaka'])->name('urus_pusaka');
 
 Auth::routes();
 

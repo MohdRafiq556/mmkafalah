@@ -29,48 +29,43 @@
                     
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link btn-outline-secondary" href="#misi">
-                                KORPORAT
+                            <a class="nav-link btn-outline-light" href="#misi">
+                                VISI & MISI
                             </a>
                         </li>
                     </ul>
-
+                    &nbsp;
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle btn-outline-light" href="" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 PERKHIDMATAN
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="{{url ('/hibah-aset ')}}">HIBAH ASET</a></li>
+                                <li><a class="dropdown-item" href="{{url ('/urus-pusaka ')}}">URUS PUSAKA</a></li>
+                                <li><a class="dropdown-item" href="#">KHAIRAT</a></li>
+                                <li><a class="dropdown-item" href="#">HARTANAH</a></li>
                             </ul>
                         </li>
                     </ul>
-
+                    &nbsp;
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle btn-outline-light" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 GALERI
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li><a class="dropdown-item" href="#">POSTER & AKTIVITI</a></li>
+                                <li><a class="dropdown-item" href="#">VIDEO</a></li>
                             </ul>
                         </li>
                     </ul>
-
+                    &nbsp;
                     <ul class="navbar-nav">
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item">
+                            <a class="nav-link btn-outline-light" href="{{url ('/contact ')}}">
                                 HUBUNGI
                             </a>
-                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
                         </li>
                     </ul>
                 </div>
