@@ -3,11 +3,14 @@
 @section('content')
 
 <!-- Icons Grid-->
-<a href="#johor" style="" class="navbar-brand btn btn-light"><i class="bi bi-arrow-down-circle"> Cawangan Johor</i></a>
-<a href="#melaka" style="" class="navbar-brand btn btn-light"><i class="bi bi-arrow-down-circle"> Cawangan Melaka</i></a>
-        
+<div style="padding:10px 0px;">
+    <a href="#johor" style="" class="navbar-brand btn btn-light"><i class="bi bi-arrow-down-circle"> Cawangan Johor</i></a>
+    <a href="#melaka" style="" class="navbar-brand btn btn-light"><i class="bi bi-arrow-down-circle"> Cawangan Melaka</i></a>
+</div>       
 <hr>
-    <h1 id="johor">Cawangan Johor</h1>
+    <div class=" text-white" style="background-image: url('{{asset('landingpage2/assets/img/bg-img-1.jpg')}}');background-size:100%;padding:40px 0px;">
+        <h1 id="johor">CAWANGAN JOHOR</h1>
+    </div>
         <section class="features-icons text-center">
             
             <div class="container">
@@ -44,7 +47,9 @@
 
         <hr>
 
-        <h1 id="melaka">Cawangan Melaka</h1>
+    <div class=" text-white" style="background-image: url('{{asset('landingpage2/assets/img/bg-img-1.jpg')}}');background-size:100%;padding:40px 0px;">
+        <h1 id="melaka">CAWANGAN MELAKA</h1>
+    </div>
         <section class="features-icons text-center">
             
             <div class="container">
