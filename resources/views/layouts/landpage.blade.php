@@ -43,7 +43,7 @@
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
                                 <li><a class="dropdown-item" href="{{url ('/hibah-aset ')}}">HIBAH ASET</a></li>
                                 <li><a class="dropdown-item" href="{{url ('/urus-pusaka ')}}">URUS PUSAKA</a></li>
-                                <li><a class="dropdown-item" href="#">KHAIRAT</a></li>
+                                <li><a class="dropdown-item" href="{{url ('/khairat ')}}">KHAIRAT</a></li>
                                 <li><a class="dropdown-item" href="#">HARTANAH</a></li>
                             </ul>
                         </li>

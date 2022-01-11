@@ -112,4 +112,9 @@ class LandingpageController extends Controller
     {
         return view('urus_pusaka');
     }
+
+    public function khairat()
+    {
+        return view('khairat');
+    }
 }

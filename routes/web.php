@@ -32,6 +32,7 @@ Route::get('/contact', [\App\Http\Controllers\LandingpageController::class, 'con
 Route::get('/privacy-policy', [\App\Http\Controllers\LandingpageController::class, 'privacy'])->name('privacy');
 Route::get('/hibah-aset', [\App\Http\Controllers\LandingpageController::class, 'hibah_aset'])->name('hibah_aset');
 Route::get('/urus-pusaka', [\App\Http\Controllers\LandingpageController::class, 'urus_pusaka'])->name('urus_pusaka');
+Route::get('/khairat', [\App\Http\Controllers\LandingpageController::class, 'khairat'])->name('khairat');
 
 Auth::routes();
 
