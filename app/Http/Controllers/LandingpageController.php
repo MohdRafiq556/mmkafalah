@@ -117,4 +117,9 @@ class LandingpageController extends Controller
     {
         return view('khairat');
     }
+
+    public function hartanah()
+    {
+        return view('hartanah');
+    }
 }

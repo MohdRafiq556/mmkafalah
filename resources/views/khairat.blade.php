@@ -32,17 +32,21 @@
 
                 <img class="img-fluid" style="width:630px;height:520px;padding:25px 0;" src="{{asset('landingpage2/assets/img/khairat-khas-2.png')}}" alt="">
 
-                <p>Menjadi tuntutan (Fardhu Kifayah) ke atas orang Islam yang masih hidup untuk melaksanakan urusan tersebut dengan sebaik-baiknya.</p>
-
-                <hr><h3>DEFINISI KHAIRAT KEMATIAN</h3><hr>
-
-                <p>Khairat kematian bermaksud wang yang dikumpulkan oleh pencarum di sesebuah kawasan yang akan diberikan kepada waris untuk menguruskan kematian. Pengumpulan dana khairat kematian secara beramai-ramai bertujuan untuk membantu waris mempercepatkan urusan pengebumian jenazah. Dalam situasi ini, kegunaan wang yang dicarum adalah sebagai persediaan barang pengebumian jenazah. Khairat kematian terbukti membantu memudahkan pengurusan jenazah dan meringankan beban waris.</p>
+                <p class="lead mb-0 ">Menjadi tuntutan (Fardhu Kifayah) ke atas orang Islam yang masih hidup untuk melaksanakan urusan tersebut dengan sebaik-baiknya.</p>
+&nbsp;
+                <div class="bg-white text-dark" style="padding:10px 15px;">
+                    <h4 class="d-flex" style="padding:10px 15px;">DEFINISI KHAIRAT KEMATIAN</h4>
+                </div>
+&nbsp;
+                <p class="lead mb-0 text-start">Khairat kematian bermaksud wang yang dikumpulkan oleh pencarum di sesebuah kawasan yang akan diberikan kepada waris untuk menguruskan kematian. Pengumpulan dana khairat kematian secara beramai-ramai bertujuan untuk membantu waris mempercepatkan urusan pengebumian jenazah. Dalam situasi ini, kegunaan wang yang dicarum adalah sebagai persediaan barang pengebumian jenazah. Khairat kematian terbukti membantu memudahkan pengurusan jenazah dan meringankan beban waris.</p>
 
                 <img class="img-fluid" style="width:630px;height:520px;padding:25px 0;" src="{{asset('landingpage2/assets/img/khairat-khas-3.png')}}" alt="">
 
             </div>
 
-                <hr><h3 style="padding:25px 0;">MANFAAT PERCUMA KHAIRAT KHAS DI MM KAFALAH</h3><hr>
+                <div class="bg-white text-dark text-center" style="padding:20px 15px;">
+                    <h4 style="padding:10px 0;">MANFAAT PERCUMA KHAIRAT KHAS DI MM KAFALAH</h4>
+                </div>
 
                 <div class="col-lg-6">
                     <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
@@ -92,7 +96,10 @@
                     </div>
                 </div>
 &nbsp;
-                <hr><h3 style="padding:15px 0;">PILIHAN KHAIRAT</h3><hr>
+                <div class="bg-white text-dark text-center" style="padding:20px 15px;">
+                    <h4 id="pilihan" style="padding:10px 0;">PILIHAN KHAIRAT</h4>
+                </div>
+
 
                 <div class="col-lg-6 ">
                     <img class="img-fluid" style="width:600px;height:570px;padding:25px 0;" src="{{asset('landingpage2/assets/img/khairat-khas-4.png')}}" alt="">
@@ -128,43 +135,43 @@
             &nbsp;
 
             <div class="justify-content-center">
-                <div class="bg-white text-dark text-center" style="padding:20px 0;">
-                    <h4>PROGRAM "1 RUMAH 1 SET MYKIFAYAH"</h4>
+                <div class="bg-white text-dark text-center" style="padding:20px 15px;">
+                    <h4 style="padding:10px 0;">PROGRAM "1 RUMAH 1 SET MYKIFAYAH"</h4>
                 </div>
 
-                <p class="lead mb-0 fs-5 d-flex" style="padding:10px 10px;">Sebab Perlu Sekurang-Kuranya Satu Set Keperluan</p>
+                <p class="lead mb-0 fs-5 d-flex fw-bold" style="padding:10px 10px;">Sebab Perlu Sekurang-Kuranya Satu Set Keperluan</p>
 
-                <div class="text-dark" style="background-image: url('{{asset('landingpage2/assets/img/bg-img-3.jpg')}}');background-size:100%;padding:15px 25px;">
+                <div class="text-dark" style="background-image: url('{{asset('landingpage2/assets/img/bg-img-3.jpg')}}');background-size:100%;padding:25px 25px;">
                     <ol class="list-group list-group-numbered">
-                        <li class="d-flex">Dapat menginsafi diri dengan mengingati kematian apabila mempunyai set MyKifayah.</li>
-                        <li class="d-flex">Dapat membuat persediaan awal sebelum perkara yang tidak diingini berlaku.</li>
-                        <li class="d-flex">Waris dapat menguruskan sendiri mandi dan kafan jenazah dengan berpandukan nota panduan yang telah disediakan. </li>
-                        <li class="d-flex">Dapat membantu dan memudahkan masyarakat sekeliling sekiranya berlaku kematian yang tidak dijangka.</li>
-                        <li class="d-flex">Dapat melakukan amal jariah dengan berwakaf dan bersedekah kepada individu mahupun institusi.</li>
+                        <li class="text-start" style="padding:5px 0 0 10px;">Dapat menginsafi diri dengan mengingati kematian apabila mempunyai set MyKifayah.</li>
+                        <li class="text-start" style="padding:5px 0 0 10px;">Dapat membuat persediaan awal sebelum perkara yang tidak diingini berlaku.</li>
+                        <li class="text-start" style="padding:5px 0 0 10px;">Waris dapat menguruskan sendiri mandi dan kafan jenazah dengan berpandukan nota panduan yang telah disediakan. </li>
+                        <li class="text-start" style="padding:5px 0 0 10px;">Dapat membantu dan memudahkan masyarakat sekeliling sekiranya berlaku kematian yang tidak dijangka.</li>
+                        <li class="text-start" style="padding:5px 0 0 10px;">Dapat melakukan amal jariah dengan berwakaf dan bersedekah kepada individu mahupun institusi.</li>
                     </ol>
                 </div>
-<hr>
+<br>
                 <img class="img-fluid" style="width:560px;height:530px;padding:25px 0;" src="{{asset('landingpage2/assets/img/kain-kafan-3.png')}}" alt="">
                 
-                <hr>
+                <hr style="border:2px solid white;">
 
                 <p class="lead mb-0">Terdapat dua pilihan set MyKifayah iaitu set ekonomi dan set premium. Berikut adalah senarai barangan dan harga kedua-dua set.</p>
                 
                 <img class="img-fluid" style="width:760px;height:640px;padding:25px 0;" src="{{asset('landingpage2/assets/img/kain-kafan-4.jpg')}}" alt="">
                 
-                <div class="bg-white text-dark text-center" style="padding:20px 0;">
-                    <h4>SET MYKIFAYAH</h4>
+                <div class="bg-white text-dark text-center" style="padding:20px 15px;">
+                    <h4 style="padding:10px 0;">SET MYKIFAYAH</h4>
                 </div>
 
                 <div class="embed-responsive embed-responsive-16by9" style="padding:20px 0;">
                     <iframe class="embed-responsive-item" style="width:660px;height:390px;" src="{{asset('landingpage2/assets/img/kain-kafan-5.mp4')}}" allowfullscreen></iframe>
                 </div>
 
-                <div class="bg-white text-dark text-center" style="padding:20px 0;">
-                    <h4>PROGRAM WAKAF SET MY KIFAYAH</h4>
+                <div class="bg-white text-dark text-center" style="padding:20px 15px;">
+                    <h4 style="padding:10px 0;">PROGRAM WAKAF SET MY KIFAYAH</h4>
                 </div>  
 
-                <p class="lead mb-0" style="padding:20px 0;">MM Kafalah Agency juga menyediakan perkhidmatan wakaf set mykifayah. Set ini boleh disumbangkan kepada individu, masjid dan hospital yang terpilih. Inisiatif ini bagi membantu golongan yang memerlukan dan menjamin kebajikan sesama Islam. Secara tidak langsung, dapat memberi peluang kepada masyarakat untuk berkongsi rezeki serta manfaat bersama.</p>
+                <p class="lead mb-0 text-start" style="padding:20px 0;">MM Kafalah Agency juga menyediakan perkhidmatan wakaf set mykifayah. Set ini boleh disumbangkan kepada individu, masjid dan hospital yang terpilih. Inisiatif ini bagi membantu golongan yang memerlukan dan menjamin kebajikan sesama Islam. Secara tidak langsung, dapat memberi peluang kepada masyarakat untuk berkongsi rezeki serta manfaat bersama.</p>
                 
                 <div class="container">
                     <div class="row">
@@ -189,38 +196,45 @@
                 <h1 >BADAL HAJI</h1>
             </div>
             <div class="justify-content-center">
-                <h4>DEFINISI BADAL HAJI</h4>
+                <h4 class="d-flex fs-3" style="padding:25px 0;">DEFINISI BADAL HAJI</h4>
 
-                <p>Badal Haji / Upah haji bermaksud mewakilkan kepada waris atau orang lain bagi melaksanakan ibadat haji ke atas dirinya disebabkan uzur seperti sakit yang tiada harapan sembuh atau terlalu tua atau meninggal dunia sedangkan ia berkemampuan tetapi tidak sempat menunaikan ibadat tersebut ketika masih hidup.</p>
-
-                <p>MM Kafalah Agency menyediakan perkhidmatan Badal Haji yang merupakan rukun Islam kelima. Ia juga boleh disempurnakan dan dilaksanakan untuk orang tersayang sebelum harta pusaka dibahagikan bagi menambahkan lagi amalan seseorang didunia dan akhirat. </p>
-
-                <img class="img-fluid" style="width:600px;height:570px;padding:25px 0;" src="{{asset('landingpage2/assets/img/badal-haji-1.png')}}" alt="">
-
+                <p class="lead mb-0 text-start">Badal Haji / Upah haji bermaksud mewakilkan kepada waris atau orang lain bagi melaksanakan ibadat haji ke atas dirinya disebabkan uzur seperti sakit yang tiada harapan sembuh atau terlalu tua atau meninggal dunia sedangkan ia berkemampuan tetapi tidak sempat menunaikan ibadat tersebut ketika masih hidup.</p>
+&nbsp;
+                <p class="lead mb-0 text-start">MM Kafalah Agency menyediakan perkhidmatan Badal Haji yang merupakan rukun Islam kelima. Ia juga boleh disempurnakan dan dilaksanakan untuk orang tersayang sebelum harta pusaka dibahagikan bagi menambahkan lagi amalan seseorang didunia dan akhirat. </p>
+                
+                <div>
+                    <img class="img-fluid" style="width:990px;height:320px;padding:25px 0;" src="{{asset('landingpage2/assets/img/badal-haji-1.png')}}" alt="">
+                </div>
             </div>
             <div class="col-lg-6 ">
-                    <img class="img-fluid" style="width:600px;height:570px;padding:25px 0;" src="{{asset('landingpage2/assets/img/badal-haji-2.png')}}" alt="">
+                    <img class="img-fluid" style="width:570px;height:480px;padding:25px 0;" src="{{asset('landingpage2/assets/img/badal-haji-2.png')}}" alt="">
                 </div>
 
                 <div class="col-lg-6 ">
-                    <img class="img-fluid" style="width:600px;height:570px;padding:25px 0;" src="{{asset('landingpage2/assets/img/badal-haji-3.png')}}" alt="">                  
+                    <img class="img-fluid" style="width:570px;height:480px;padding:25px 0;" src="{{asset('landingpage2/assets/img/badal-haji-3.png')}}" alt="">                  
                 </div>
 
             <div class="justify-content-center">
-                <p>Mereka yang berkemampuan secara langsung adalah DIWAJIBKAN haji baginya manakala, bagi mereka yang berkemampuan secara tidak langsung adalah DIHARUSKAN untuk melakukan upah haji.</p>
-                <hr>
-                <img class="img-fluid" style="width:600px;height:570px;padding:25px 0;" src="{{asset('landingpage2/assets/img/badal-haji-4.png')}}" alt="">                  
+                <p class="lead mb-0 ">Mereka yang berkemampuan secara langsung adalah DIWAJIBKAN haji baginya manakala, bagi mereka yang berkemampuan secara tidak langsung adalah DIHARUSKAN untuk melakukan upah haji.</p>
+                <div style="padding:25px 0;"><a class="text-white btn btn-danger" href="https://api.whatsapp.com/send?phone=601110899055&text=SAYA%20NAK%20TAHU%20TENTANG%20HIBAH" target="_blank">Ketahui Lebih Lanjut</a></div>
+                <hr style="border:2px solid white;">
+                <img class="img-fluid" style="width:830px;height:620px;padding:25px 0;" src="{{asset('landingpage2/assets/img/badal-haji-4.png')}}" alt="">                  
             </div>
 
-            <h4>PERSOALAN UPAH/BADAL HAJI</h4>
-            <h5>Apakah Hukum Melaksanakan Upah Haji?</h5>
-            <p>Hukum melaksanakannya adalah harus. Rasulullah menyamakan Haji sebagai hutang dengan Allah SWT. Jadi, sebagai waris sebaiknya kita bantu arwah untuk melangsaikan hutang tersebut.</p>
+            <div class="justify-content-center" style="padding:25px 0;">
+                <div class="bg-white text-dark text-center" style="padding:20px 15px;">
+                    <h4 class="d-flex" style="padding:10px 0;">PERSOALAN UPAH/BADAL HAJI</h4>
+                </div>
 
-            <h5>Adakah Waris Boleh Melaksanakan Haji Untuk Arwah?</h5>
-            <p>Lebih afdhal, dengan syarat waris tersebut sudah melaksanakan Haji untuk dirinya sendiri. Jika masih belum laksanakan Haji untuk diri sendiri, waris boleh mengupah orang lain seperti melalui agensi umrah yang berlesen.</p>
-
-            <h5>Apakah Pahala Yang Dapat Diperolehi Jika Mengerjakan Haji Bagi Orang Yang Meninggal Dunia?</h5>
-            <p>Orang yang mengerjakannya dapat pahala membantu dalam perkara kebajikan. Orang yang mati itu pula gugur kewajipan.</p>
+                <li class="text-start fs-5 fw-bold" style="padding:25px 0 8px 0;">Apakah Hukum Melaksanakan Upah Haji?</li>
+                <p class="lead mb-0 text-start">Hukum melaksanakannya adalah harus. Rasulullah menyamakan Haji sebagai hutang dengan Allah SWT. Jadi, sebagai waris sebaiknya kita bantu arwah untuk melangsaikan hutang tersebut.</p>
+<hr style="border:2px solid white;">
+                <li class="text-start fs-5 fw-bold" style="padding:25px 0 8px 0;">Adakah Waris Boleh Melaksanakan Haji Untuk Arwah?</li>
+                <p class="lead mb-0 text-start">Lebih afdhal, dengan syarat waris tersebut sudah melaksanakan Haji untuk dirinya sendiri. Jika masih belum laksanakan Haji untuk diri sendiri, waris boleh mengupah orang lain seperti melalui agensi umrah yang berlesen.</p>
+<hr style="border:2px solid white;">
+                <li class="text-start fs-5 fw-bold" style="padding:25px 0 8px 0;">Apakah Pahala Yang Dapat Diperolehi Jika Mengerjakan Haji Bagi Orang Yang Meninggal Dunia?</li>
+                <p class="lead mb-0 text-start">Orang yang mengerjakannya dapat pahala membantu dalam perkara kebajikan. Orang yang mati itu pula gugur kewajipan.</p>
+            </div>
         </div>
     </div>
 </section>

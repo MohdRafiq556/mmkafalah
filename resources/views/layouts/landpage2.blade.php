@@ -15,6 +15,15 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{{asset('landingpage2/css/styles.css')}}" rel="stylesheet" />
+        <style>
+            #btn-back-to-top 
+            {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                display: none;
+            }
+        </style>
     </head>
     <body>
         <!-- Navigation-->
@@ -37,7 +46,10 @@
             </div>
         </section>
 
-
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-success btn-floating btn-lg" id="btn-back-to-top">
+            <i class="bi bi-chevron-up"></i>
+        </button>
 
         <!-- Footer-->
         <footer class="footer bg-light">
@@ -81,5 +93,34 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    
+        <script>
+            //Get the button
+let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+// When the user clicks on the button, scroll to the top of the document
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+        </script>
+
     </body>
 </html>
