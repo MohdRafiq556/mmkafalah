@@ -122,4 +122,14 @@ class LandingpageController extends Controller
     {
         return view('hartanah');
     }
+
+    public function poster()
+    {
+        return view('poster');
+    }
+
+    public function video()
+    {
+        return view('video');
+    }
 }

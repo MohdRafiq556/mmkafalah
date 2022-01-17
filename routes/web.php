@@ -34,6 +34,8 @@ Route::get('/hibah-aset', [\App\Http\Controllers\LandingpageController::class, '
 Route::get('/urus-pusaka', [\App\Http\Controllers\LandingpageController::class, 'urus_pusaka'])->name('urus_pusaka');
 Route::get('/khairat', [\App\Http\Controllers\LandingpageController::class, 'khairat'])->name('khairat');
 Route::get('/hartanah', [\App\Http\Controllers\LandingpageController::class, 'hartanah'])->name('hartanah');
+Route::get('/poster-dan-aktiviti', [\App\Http\Controllers\LandingpageController::class, 'poster'])->name('poster');
+Route::get('/video', [\App\Http\Controllers\LandingpageController::class, 'video'])->name('video');
 
 Auth::routes();
 

@@ -65,8 +65,8 @@
                                 GALERI
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">POSTER & AKTIVITI</a></li>
-                                <li><a class="dropdown-item" href="#">VIDEO</a></li>
+                                <li><a class="dropdown-item" href="{{url ('/poster-dan-aktiviti ')}}">POSTER & AKTIVITI</a></li>
+                                <li><a class="dropdown-item" href="{{url ('/video ')}}">VIDEO</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -141,8 +141,8 @@
                 <!-- Icons Grid-->
                 <section class="features-icons bg-light text-center">
                     <div class="container">
-                        <div class="row">
-                            <h4 id="misi">Misi Syarikat</h4>
+                        <div class="row justify-content-center">
+                            <h3 id="misi" class="text-uppercase fw-bold">Misi Syarikat</h3>
                             <div class="col-lg-4">
                                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                     <div class="features-icons-icon d-flex"><i class="bi bi bi-wallet-fill m-auto text-primary"></i></div>
@@ -164,8 +164,8 @@
                                     <p class="lead mb-0">Membantu masyarakat menyempurnakan tuntutan fardhu kifayah sesama islam</p>
                                 </div>
                             </div>
-                            &nbsp;<hr>&nbsp;
-                            <h4>Visi Syarikat</h4>
+                            &nbsp;<hr style="border:2px solid black;">&nbsp;
+                            <h3 class="text-uppercase fw-bold">Visi Syarikat</h3>
                             <div class="col-lg-12">
                                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                     <div class="features-icons-icon d-flex"><i class="bi bi-cash-coin m-auto text-primary"></i></div>
@@ -185,7 +185,7 @@
                 </button>
 
         <!-- Footer-->
-        <footer class="footer bg-light">
+        <footer class=" footer bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
