@@ -103,12 +103,12 @@
 
                 <div class="col-lg-6 ">
                     <img class="img-fluid" style="width:600px;height:570px;padding:25px 0;" src="{{asset('landingpage2/assets/img/khairat-khas-4.png')}}" alt="">
-                    <a class="text-white btn btn-danger" href="https://api.whatsapp.com/send?phone=601110899055&text=SAYA%20NAK%20TAHU%20TENTANG%20HIBAH" target="_blank">Pilih Khairat Standard</a>
+                    <a class="text-white btn btn-danger" href="https://api.whatsapp.com/send?phone=601110899055&text=Saya%20nak%20Khairat%20Khas%20Standard" target="_blank">Pilih Khairat Standard</a>
                 </div>
 
                 <div class="col-lg-6 ">
                     <img class="img-fluid" style="width:600px;height:570px;padding:25px 0;" src="{{asset('landingpage2/assets/img/khairat-khas-5.png')}}" alt="">
-                    <a class="text-white btn btn-danger" href="https://api.whatsapp.com/send?phone=601110899055&text=SAYA%20NAK%20TAHU%20TENTANG%20HIBAH" target="_blank">Pilih Khairat Warga Emas</a>
+                    <a class="text-white btn btn-danger" href="https://api.whatsapp.com/send?phone=601110899055&text=Saya%20nak%20Khairat%20Khas%20Warga%20Emas" target="_blank">Pilih Khairat Warga Emas</a>
                 </div>
         </div>
     </div>
@@ -128,7 +128,7 @@
                 <img class="img-fluid" style="width:630px;height:570px;padding:25px 0;" src="{{asset('landingpage2/assets/img/kain-kafan-2.png')}}" alt="">
                 <br>
 
-                <div style="padding:25px 0;"><a class="text-white btn btn-danger"  href="https://api.whatsapp.com/send?phone=601110899055&text=SAYA%20NAK%20TAHU%20TENTANG%20HIBAH" target="_blank">Saya Ingin Tahu Tentang Set MYKIFAYAH</a></div>
+                <div style="padding:25px 0;"><a class="text-white btn btn-danger"  href="https://api.whatsapp.com/send?phone=601110899055&text=Set%20Lengkap%20Kain%20Kafan" target="_blank">Saya Ingin Tahu Tentang Set MYKIFAYAH</a></div>
 
                 <p class="lead mb-0">Seterusnya adalah urusan pengebumian dan urusan pembahagian harta pusaka si mati. Maka, pengurusan jenazah adalah sangat penting dan perlu dititikberatkan.</p>
             </div>
@@ -216,7 +216,7 @@
 
             <div class="justify-content-center">
                 <p class="lead mb-0 ">Mereka yang berkemampuan secara langsung adalah DIWAJIBKAN haji baginya manakala, bagi mereka yang berkemampuan secara tidak langsung adalah DIHARUSKAN untuk melakukan upah haji.</p>
-                <div style="padding:25px 0;"><a class="text-white btn btn-danger" href="https://api.whatsapp.com/send?phone=601110899055&text=SAYA%20NAK%20TAHU%20TENTANG%20HIBAH" target="_blank">Ketahui Lebih Lanjut</a></div>
+                <div style="padding:25px 0;"><a class="text-white btn btn-danger" href="https://api.whatsapp.com/send?phone=601110899055&text=SAYA%20NAK%20TAHU%20TENTANG%20PERKHIDMATAN%20BADAL%20HAJI" target="_blank">Ketahui Lebih Lanjut</a></div>
                 <hr style="border:2px solid white;">
                 <img class="img-fluid" style="width:830px;height:620px;padding:25px 0;" src="{{asset('landingpage2/assets/img/badal-haji-4.png')}}" alt="">                  
             </div>

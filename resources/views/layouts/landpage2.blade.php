@@ -96,7 +96,7 @@
         </section>
 
         <!-- Back to top button -->
-        <button type="button" class="btn btn-success btn-floating btn-lg" id="btn-back-to-top">
+        <button type="button" class="btn btn-secondary btn-floating btn-lg" id="btn-back-to-top">
             <i class="bi bi-chevron-up"></i>
         </button>
 

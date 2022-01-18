@@ -142,7 +142,7 @@
                 <section class="features-icons bg-light text-center">
                     <div class="container">
                         <div class="row justify-content-center">
-                            <h3 id="misi" class="text-uppercase fw-bold">Misi Syarikat</h3>
+                            <h3 id="misi" class="text-uppercase fw-bold mb-4">Misi Syarikat</h3>
                             <div class="col-lg-4">
                                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                     <div class="features-icons-icon d-flex"><i class="bi bi bi-wallet-fill m-auto text-primary"></i></div>
@@ -165,7 +165,7 @@
                                 </div>
                             </div>
                             &nbsp;<hr style="border:2px solid black;">&nbsp;
-                            <h3 class="text-uppercase fw-bold">Visi Syarikat</h3>
+                            <h3 class="text-uppercase fw-bold mb-4">Visi Syarikat</h3>
                             <div class="col-lg-12">
                                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                     <div class="features-icons-icon d-flex"><i class="bi bi-cash-coin m-auto text-primary"></i></div>
@@ -177,10 +177,63 @@
                     </div>
                 </section>
 
+                <section class="bg-secondary p-5" >
+                    <div class="container text-center text-light">
+                        <h1 class="mb-4 ">Dari Abi Bazrah Al-Asmi Berkata:</h1>
+                        <p class="fs-5">Baginda Rasulullah SAW bersabda, tidak akan melangkah kaki anak Adam pada hari kiamat sehingga ditanyakan tentang umurnya pada apa ia habiskan, tentang ilmunya pada apa ia lakukan, tentang hartanya dari mana ianya diperolehi dan ke mana ianya dibelanjakan dan tentang tubuhnya pada apa ianya dihabiskan. (HR Imam Tirmizi)</p>
+                    </div>
+                </section>
+                
+                <section class="features-icons bg-light text-center">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="p-4">
+                                <h3 class="text-uppercase fw-bold mb-4">PERKHIDMATAN KAMI</h3>
+                            </div>
+                            
+                            <div class="col-lg-4 border border-secondary border-3 rounded-3">
+                                <div class=" features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 p-4">
+                                    <div class="features-icons-icon "><a class="fs-4 fw-bold text-decoration-none " href="{{url ('/hibah-aset ')}}"><i class="bi bi-bank2 m-auto text-secondary"></i><br>Hibah Aset</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 border border-secondary border-3 rounded-3">
+                                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 p-4">
+                                    <div class="features-icons-icon "><a class="fs-4 fw-bold text-decoration-none" href="{{url ('/urus-pusaka ')}}"><i class="bi bi-file-text-fill m-auto text-secondary"></i><br>Urus Pusaka</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 border border-secondary border-3 rounded-3">
+                                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 p-4">
+                                    <div class="features-icons-icon"><a class="fs-4 fw-bold text-decoration-none" href="{{url ('/khairat ')}}"><i class="bi bi-collection-fill m-auto text-secondary"></i><br>Khairat Kifayahku</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 border border-secondary border-3 rounded-3">
+                                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 p-4">
+                                    <div class="features-icons-icon "><a class="fs-4 fw-bold text-decoration-none" href="{{url ('/hartanah ')}}"><i class="bi bi-house-door-fill m-auto text-secondary"></i><br>Hartanah</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 border border-secondary border-3 rounded-3">
+                                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 p-4">
+                                    <div class="features-icons-icon "><a class="fs-4 fw-bold text-decoration-none" href="{{url ('/poster-dan-aktiviti ')}}"><i class="bi bi-file-image-fill m-auto text-secondary"></i><br>Poster</a></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4 border border-secondary border-3 rounded-3">
+                                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3 p-4">
+                                    <div class="features-icons-icon "><a class="fs-4 fw-bold text-decoration-none" href="{{url ('/video ')}}"><i class="bi bi-camera-video-fill m-auto text-secondary"></i><br>Video</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
                 <hr>
 
                 <!-- Back to top button -->
-                <button type="button" class="btn btn-success btn-floating btn-lg" id="btn-back-to-top">
+                <button type="button" class="btn btn-secondary btn-floating btn-lg" id="btn-back-to-top">
                 <i class="bi bi-chevron-up"></i>
                 </button>
 

@@ -44,7 +44,7 @@
                 <p class="text-center fs-4">Hubungi kami melalui link di bawah :</p>
                 
                 <div style="padding:15px 0;">
-                    <a class="text-white btn btn-danger" href="https://api.whatsapp.com/send?phone=601110899055&text=SAYA%20NAK%20TAHU%20TENTANG%20HIBAH" target="_blank">Hubungi Kami <i class="bi bi-chevron-double-right"></i></a>
+                    <a class="text-white btn btn-danger" href="https://api.whatsapp.com/send?phone=601110899055&text=SAYA%20NAK%20URUS%20HARTANAH" target="_blank">Hubungi Kami <i class="bi bi-chevron-double-right"></i></a>
                 </div>
 
             </div>
