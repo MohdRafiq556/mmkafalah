@@ -56,7 +56,7 @@
 
                             <div class="form-group row">
                                 <div class="col-sm-12 text-right">
-                                    <a class="btn btn-warning" href="{{url ('receivers/share_view/{customer_id}', ['$hibah -> customer_id'])}}">Kembali ke Senarai Penerima</a>
+                                    <a class="btn btn-warning" href="{{url ('receivers/share_view', ['id' => $receiver->hibah_id])}}">Kembali ke Senarai Penerima</a>
                                 </div>
                             </div>
                         </form>

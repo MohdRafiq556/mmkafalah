@@ -7,9 +7,7 @@
             <div class="card">
                 <div class="card-header">
                     <h3>Index</h3>
-                        <div class="float-right">
-                            <a href="{{route ('hibah-index', ['$hibah->id'])}}">Kembali</a> <!-- aku tak dpt nak buat dia back ke hibah index -->
-                        </div> 
+                        
 
                 </div>
 

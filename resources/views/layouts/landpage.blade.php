@@ -147,21 +147,21 @@
                                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                     <div class="features-icons-icon d-flex"><i class="bi bi bi-wallet-fill m-auto text-primary"></i></div>
                                     
-                                    <p class="lead mb-0">Menjadi syarikat yang dekat dengan masyarakat di mana dapat memberi khidmat masyarakat di dalam menyelesaikan masalah berkaitan harta pusaka</p>
+                                    <p class="lead mb-0 fw-bold">Menjadi syarikat yang dekat dengan masyarakat di mana dapat memberi khidmat masyarakat di dalam menyelesaikan masalah berkaitan harta pusaka</p>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                     <div class="features-icons-icon d-flex"><i class="bi bi-briefcase-fill m-auto text-primary"></i></div>
                                     
-                                    <p class="lead mb-0">Mewujudkan lebih banyak peluang pekerjaan masyarakat di luar sana</p>
+                                    <p class="lead mb-0 fw-bold">Mewujudkan lebih banyak peluang pekerjaan masyarakat di luar sana</p>
                                 </div>
                             </div>
                             <div class="col-lg-4">
                                 <div class="features-icons-item mx-auto mb-0 mb-lg-3">
                                     <div class="features-icons-icon d-flex"><i class="bi bi-people-fill m-auto text-primary"></i></div>
                                     
-                                    <p class="lead mb-0">Membantu masyarakat menyempurnakan tuntutan fardhu kifayah sesama islam</p>
+                                    <p class="lead mb-0 fw-bold">Membantu masyarakat menyempurnakan tuntutan fardhu kifayah sesama islam</p>
                                 </div>
                             </div>
                             &nbsp;<hr style="border:2px solid black;">&nbsp;
@@ -170,7 +170,7 @@
                                 <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
                                     <div class="features-icons-icon d-flex"><i class="bi bi-cash-coin m-auto text-primary"></i></div>
                                     
-                                    <p class="lead mb-3">Dapat membantu kerajaan menurunkan kadar aset terbeku milik orang islam</p>
+                                    <p class="lead mb-3 fw-bold">Dapat membantu kerajaan menurunkan kadar aset terbeku milik orang islam</p>
                                 </div>
                             </div>
                         </div>
@@ -243,11 +243,11 @@
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                         <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="{{url ('/aboutus ')}}">About</a></li>
+                            <li class="list-inline-item"><a href="{{url ('/aboutus ')}}">Tentang Kami</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="{{url ('/contact ')}}">Contact</a></li>
+                            <li class="list-inline-item"><a href="{{url ('/contact ')}}">Hubungi</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="{{url ('/privacy-policy ')}}">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="{{url ('/privacy-policy ')}}">Privasi</a></li>
                         </ul>
                         <p class="text-muted small mb-4 mb-lg-0">&copy; MMKafalah Agency 2021. All Rights Reserved.</p>
                     </div>

@@ -42,9 +42,7 @@
                             </tbody>
                         </table>
                         {{ $data->receivers->links() }}
-                        <div style="float-right">
-                            <a class="btn btn-warning btn-sm" href="{{url ('/receivers/share_view/, $receiver->id')}}">Kembali ke Senarai Hibah</a>
-                        </div>
+                        
                     </div>
                 </div>
             </div>

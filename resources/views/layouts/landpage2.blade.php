@@ -106,11 +106,11 @@
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
                         <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="{{url ('/aboutus ')}}">About</a></li>
+                            <li class="list-inline-item"><a href="{{url ('/aboutus ')}}">Tentang Kami</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="{{url ('/contact ')}}">Contact</a></li>
+                            <li class="list-inline-item"><a href="{{url ('/contact ')}}">Hubungi</a></li>
                             <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="{{url ('/privacy-policy ')}}">Privacy Policy</a></li>
+                            <li class="list-inline-item"><a href="{{url ('/privacy-policy ')}}">Privasi</a></li>
                         </ul>
                         <p class="text-muted small mb-4 mb-lg-0">&copy; MMKafalah Agency 2021. All Rights Reserved.</p>
                     </div>
