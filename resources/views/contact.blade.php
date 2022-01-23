@@ -13,7 +13,7 @@
     </div>
         <section class="features-icons text-center">    
             <div class="container">
-                <div class="order-lg-2"><img style="width:650px;height:350px;" src="{{asset('landingpage2/assets/img/contact_img-1.jpg')}}" alt="Pejabat Cawangan Johor"></div>
+                <div class="order-lg-4"><img class="img-fluid" style="width:100%;height:350px;" src="{{asset('landingpage2/assets/img/contact_img-1.jpg')}}" alt="Pejabat Cawangan Johor"></div>
                 <div class="row p-2">
                     <div class="col-lg-4">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">   
@@ -46,7 +46,7 @@
 
         <section class="features-icons text-center">
             <div class="container">
-            <div class="order-lg-2"><img style="width:650px;height:350px;" src="{{asset('landingpage2/assets/img/contact_img-3.jpg')}}" alt="Pejabat Cawangan Melaka"></div>
+            <div class="order-lg-4"><img class="img-fluid" style="width:100%;height:350px;" src="{{asset('landingpage2/assets/img/contact_img-3.jpg')}}" alt="Pejabat Cawangan Melaka"></div>
                 <div class="row p-2">
                     <div class="col-lg-4">
                         <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">

@@ -37,7 +37,9 @@
 
                 <div class="bg-white text-dark">
                     <hr><h3>JENIS-JENIS HIBAH</h3><hr>
-                    <img class="img-fluid" style="width:100%;height:330px;" src="{{asset('landingpage2/assets/img/hibah-aset_5.png')}}" alt="">
+                    <div class="col">
+                        <img class="img-fluid" style="width:100%;height:330px;" src="{{asset('landingpage2/assets/img/hibah-aset_5.png')}}" alt="">
+                    </div>
                 </div>
                 &nbsp;
 
@@ -58,11 +60,11 @@
                 <hr style="border:2px solid white;">&nbsp;
                 <div class="container">
                     <div class="row">
-                        <div class="col">
-                            <img class="rounded float-start" style="width:600px;height:500px;" src="{{asset('landingpage2/assets/img/hibah-aset_3.png')}}" alt="">
+                        <div class="col-lg-6">
+                            <img class="p-4" style="width:100%;height:500px;" src="{{asset('landingpage2/assets/img/hibah-aset_3.png')}}" alt="">
                         </div>
-                        <div class="col">
-                            <img class="rounded float-end" style="width:600px;height:500px;" src="{{asset('landingpage2/assets/img/hibah-aset_4.png')}}" alt="">
+                        <div class="col-lg-6">
+                            <img class="p-4" style="width:100%;height:500px;" src="{{asset('landingpage2/assets/img/hibah-aset_4.png')}}" alt="">
                         </div>
                     </div>
                 </div>

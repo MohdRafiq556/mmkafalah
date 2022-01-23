@@ -55,12 +55,12 @@
                 <h3 class="features-icons-icon text-center p-4">KEPENTINGAN PUSAKA</h3>
                     <div class="row">
                         <div class="col p-4">
-                            <img  style="width:530px;height:430px;" src="{{asset('landingpage2/assets/img/urus-pusaka_3.png')}}" alt="">
-                            <p class="lead mb-0 fs-5"><strong class="fw-bold">Hutang si mati</strong> dapat di jelaskan dengan segera</p>
+                            <img class="img-fluid" style="width:100%;height:430px;" src="{{asset('landingpage2/assets/img/urus-pusaka_3.png')}}" alt="">
+                            <p class="lead mb-0 p-2 fs-5"><strong class="fw-bold">Hutang si mati</strong> dapat di jelaskan dengan segera</p>
                         </div>
                         <div class="col p-4">
-                            <img  style="width:530px;height:430px;" src="{{asset('landingpage2/assets/img/urus-pusaka_4.png')}}" alt="">
-                            <p class="lead mb-0 fs-5">Mengelak waris <strong class="fw-bold">memakan harta batil</strong></p>
+                            <img class="img-fluid" style="width:100%;height:430px;" src="{{asset('landingpage2/assets/img/urus-pusaka_4.png')}}" alt="">
+                            <p class="lead mb-0 p-2 fs-5">Mengelak waris <strong class="fw-bold">memakan harta batil</strong></p>
                         </div>
                     </div>
                 </div>
@@ -68,12 +68,12 @@
                 <div class="container bg-light text-dark">
                     <div class="row">
                         <div class="col p-4">
-                            <img  style="width:530px;height:430px;" src="{{asset('landingpage2/assets/img/urus-pusaka_5.png')}}" alt="">
-                            <p class="lead mb-0 fs-5"><strong class="fw-bold">Menjamin kebajikan waris</strong> yang ditinggalkan</p>
+                            <img  style="width:100%;height:430px;" src="{{asset('landingpage2/assets/img/urus-pusaka_5.png')}}" alt="">
+                            <p class="lead mb-0 p-2 fs-5"><strong class="fw-bold">Menjamin kebajikan waris</strong> yang ditinggalkan</p>
                         </div>
                         <div class="col p-4">
-                            <img  style="width:530px;height:430px;" src="{{asset('landingpage2/assets/img/urus-pusaka_6.png')}}" alt="">
-                            <p  class="lead mb-0 fs-5 ">Dapat<strong class="fw-bold"> mengelakkan</strong> waris daripada <strong class="fw-bold">putus silaturrahim</strong></p>
+                            <img  style="width:100%;height:430px;" src="{{asset('landingpage2/assets/img/urus-pusaka_6.png')}}" alt="">
+                            <p  class="lead mb-0 p-2 fs-5 ">Dapat<strong class="fw-bold"> mengelakkan</strong> waris daripada <strong class="fw-bold">putus silaturrahim</strong></p>
                         </div>
                     </div>
                 </div>
@@ -112,8 +112,8 @@
         <section class="showcase ">
             <div class="container-fluid p-0">
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2"><img src="{{asset('landingpage2/assets/img/urus-pusaka_9.jpg')}}" style="width:650px;height:352px;" alt=""></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text bg-secondary">
+                    <div class="col-lg-6 order-lg-2"><img src="{{asset('landingpage2/assets/img/urus-pusaka_9.jpg')}}" style="width:100%;height:352px;" alt=""></div>
+                    <div class="col-lg-6 order-lg-1  showcase-text bg-secondary">
                         <h4 class="fs-4">RUKUN PUSAKA</h4>
                             <li class="fs-5 text-center">Si Mati</li>
                             <li class="fs-5 text-center">Waris</li>
@@ -121,8 +121,8 @@
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6"><img src="{{asset('landingpage2/assets/img/urus-pusaka_10.jpg')}}" style="width:650px;height:352px;" alt=""></div>
-                    <div class="col-lg-6 my-auto showcase-text bg-secondary">
+                    <div class="col-lg-6"><img src="{{asset('landingpage2/assets/img/urus-pusaka_10.jpg')}}" style="width:100%;height:352px;" alt=""></div>
+                    <div class="col-lg-6 showcase-text bg-secondary">
                         <h4 class="fs-4">SEBAB MEMPUSAKAI HARTA</h4>
                             <li class="fs-5 text-center">Perkahwinan</li>
                             <li class="fs-5 text-center">Keturunan</li>
@@ -130,7 +130,7 @@
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white"><img src="{{asset('landingpage2/assets/img/urus-pusaka_11.jpg')}}" style="width:650px;height:352px;" alt=""></div>
+                    <div class="col-lg-6 order-lg-2 text-white"><img src="{{asset('landingpage2/assets/img/urus-pusaka_11.jpg')}}" style="width:100%;height:352px;" alt=""></div>
                     <div class="col-lg-6 order-lg-1 my-auto showcase-text bg-secondary">
                         <h4 class="fs-4">TIDAK LAYAK TERIMA PUSAKA</h4>
                             <li class="fs-5 text-center">Membunuh</li>
@@ -139,7 +139,7 @@
                     </div>
                 </div>
                 <div class="row g-0">
-                    <div class="col-lg-6 text-white"><img src="{{asset('landingpage2/assets/img/urus-pusaka_12.jpg')}}" style="width:650px;height:320px;" alt=""></div>
+                    <div class="col-lg-6 text-white"><img src="{{asset('landingpage2/assets/img/urus-pusaka_12.jpg')}}" style="width:100%;height:320px;" alt=""></div>
                     <div class="col-lg-6 my-auto showcase-text bg-secondary">
                         <h4 class="fs-4">SYARAT TERIMA PUSAKA</h4>
                             <li class="fs-5 text-center">Harta Milik Si Mati</li>

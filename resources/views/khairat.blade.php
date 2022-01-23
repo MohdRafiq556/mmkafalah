@@ -164,7 +164,7 @@
                 </div>
 
                 <div class="embed-responsive embed-responsive-16by9" style="padding:20px 0;">
-                    <iframe class="embed-responsive-item" style="width:660px;height:390px;" src="{{asset('landingpage2/assets/img/kain-kafan-5.mp4')}}" allowfullscreen></iframe>
+                    <iframe class="embed-responsive-item" style="width:100%;height:390px;" allow="accelerometer; no-autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" src="{{asset('landingpage2/assets/img/kain-kafan-5.mp4')}}" allowfullscreen></iframe>
                 </div>
 
                 <div class="bg-white text-dark text-center" style="padding:20px 15px;">
